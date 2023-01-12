@@ -31,9 +31,10 @@ indexHtmlFilePath = splashToolset.config.htmlFile;
 // setting transparent main window
 mainWindow.mainWindowConfig = {...mainWindow.mainWindowConfig, transparent: true};
 
-// adding preload script for the main window
+// adding preload script for the main window and setting sandbox to false
 mainWindow.mainWindowConfig = {...mainWindow.mainWindowConfig, webPreferences: {
     preload: path.join(__dirname, "components/preloads/mainPreload.js"),
+    sandbox: false,
 }}
 
 // starting the application
