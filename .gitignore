@@ -4,3 +4,5 @@ node_modules/*
 
 !node_modules/components.js
 !node_modules/toolset.js
+
+out/
