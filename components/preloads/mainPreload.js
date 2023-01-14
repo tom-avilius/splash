@@ -1,8 +1,11 @@
 // imports
-const { contextBridge, ipcRenderer } = require('electron')
+const { contextBridge,} = require('electron')
 
 // importing child process module
 const {exec} = require('child_process');
+
+// importing os-utils module
+const os = require('os-utils');
 
 contextBridge.exposeInMainWorld('terminal', {
     execute: async (command, execOptions = {}) => {
@@ -19,4 +22,15 @@ contextBridge.exposeInMainWorld('terminal', {
             childProcess.on('error', error => reject(error));
             })
     },
+})
+
+
+contextBridge.exposeInMainWorld('os', {
+    cpu: () => {
+        return os.cpuUsage((v) => v*100);
+    },
+
+    memory: () => {
+        return os.freememPercentage()*100;
+    }
 })

@@ -19,6 +19,7 @@
     "electron": "^22.0.0"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "os-utils": "^0.0.14"
   }
 }
