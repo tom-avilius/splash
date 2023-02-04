@@ -10,3 +10,10 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
+.background {
+
+    background-color: black;
+    opacity: 30%;
+    height: 100vh;
+}
