@@ -1,0 +1,12 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./pexels-lisa-fotios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
