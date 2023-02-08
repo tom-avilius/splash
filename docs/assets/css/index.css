@@ -1,19 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-image: url("./pexels-lisa-fotios.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+.header {
+
+    background-color: #404258;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
 }
 
-.background {
+.header h1 {
 
-    background-color: black;
-    opacity: 30%;
-    height: 100vh;
+    font-family: 'Cardo', serif;
+    letter-spacing: 0.1cm;
+    font-weight: 500;
+    font-size: 2.3rem;
+    color:white;
+    cursor: pointer;
+
+    transition: all ease 0.4s;
+}
+
+.header h1:hover {
+
+    letter-spacing: 0;
+}
+
+.header button {
+
+    background-color: #474E68;
+    border-radius: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border: 0 white solid;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    user-select: none;
+    cursor: pointer;
+    transition: all ease 0.4s; 
+    color: white;
+}
+
+.header button:hover {
+
+    background-color: #50577A;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
+}
+
+.nav-item {
+
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    transition: all ease 0.4s;
+
+    padding: 0 20px;
+}
+
+.nav-item a {
+
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+
+    border: 0.2rem solid white;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+
+    box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
 }
