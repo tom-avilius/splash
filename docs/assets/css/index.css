@@ -1,8 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&family=Montserrat&family=Poppins&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.content {
+
+    padding: 7% 10%;
+}
+
+.content h1 {
+
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+
+.content p {
+
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 2%;
+}
+
+.content hr {
+
+    margin-bottom: 5%;
 }
 
 .header {
@@ -14,7 +36,12 @@
     padding: 15px 10%;
 }
 
-.header h1 {
+.header a {
+
+    text-decoration: none;
+}
+
+.header a h1 {
 
     font-family: 'Cardo', serif;
     letter-spacing: 0.1cm;
