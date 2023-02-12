@@ -13,10 +13,16 @@
 
 .content {
 
-    padding: 7% 10%;
-    background-color: #6B728E;
+    padding: 7% 10% 1%;
+    background-color: #50577A;
     transition: all ease 0.4s;
     text-align: center;
+}
+
+.content-i {
+
+    background-color: #6B728E;
+    padding: 7% 5%;
 }
 
 .content div {
@@ -92,6 +98,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
+    position: fixed;
+    width: 80%;
 }
 
 .header a {
