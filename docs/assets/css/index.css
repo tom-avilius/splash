@@ -13,7 +13,7 @@
 
 .content {
 
-    padding: 7% 10% 1%;
+    padding: 12% 10% 1% 10%;
     background-color: #50577A;
     transition: all ease 0.4s;
     text-align: center;
@@ -22,7 +22,13 @@
 .content-i {
 
     background-color: #6B728E;
-    padding: 7% 5%;
+    text-align: center;
+    padding: 4% 7%;
+}
+
+.content-i img {
+
+    width: 100vh;
 }
 
 .content div {
@@ -89,6 +95,21 @@
 .font-2rem {
 
     font-size: 2rem;
+}
+
+footer {
+
+    text-align: center;
+    background-color: #344D67;
+    padding: 2% 7%;
+}
+
+footer a {
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
