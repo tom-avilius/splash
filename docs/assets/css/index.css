@@ -5,26 +5,84 @@
     padding: 0;
 }
 
+.color-black {
+
+    color: black;
+    border-color: black;
+}
+
 .content {
 
     padding: 7% 10%;
+    background-color: #6B728E;
+    transition: all ease 0.4s;
+    text-align: center;
+}
+
+.content div {
+
+    transition: all ease 0.4s;
+}
+
+.content div button {
+
+    transition: all ease 0.4s;
 }
 
 .content h1 {
 
     font-family: 'Poppins', sans-serif;
     padding-bottom: 10px;
+
+    transition: all ease 0.4s;
 }
 
 .content p {
 
     font-family: 'Inter', sans-serif;
     padding-bottom: 2%;
+
+    transition: all ease 0.4s;
 }
 
 .content hr {
 
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+
+    transition: all ease 0.4s;
+
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.download-btn {
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    padding: 7px 14px;
+    border-radius: 1.5rem;
+    background-color: #474E68;
+    color: white;
+    border: 0 white solid;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    user-select: none;
+    cursor: pointer;
+    transition: all ease 0.4s; 
+    margin-bottom: 1%;
+
+    transition: all ease 0.4s;
+}
+
+.download-btn:hover {
+
+    /* color: #50577A; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
+}
+
+.font-2rem {
+
+    font-size: 2rem;
 }
 
 .header {
@@ -80,6 +138,29 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
 }
 
+.hidden {
+
+    display: none;
+    transition: all ease 0.4s;
+}
+
+.h1-hover {
+
+    font-size: 2.5rem;
+    transition: all ease 0.4s;
+}
+
+.hr-hover {
+
+    border: 0.1rem solid white;
+    border-radius: 1.5rem;
+
+    background-color: white;
+    color: white;
+
+    box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
+}
+
 .nav-item {
 
     display: inline-block;
@@ -102,4 +183,10 @@
     padding: 0.5rem;
 
     box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
+}
+
+.p-hover {
+
+    font-size: 1.5rem;
+    transition: all ease 0.4s;
 }
