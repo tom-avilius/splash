@@ -16,7 +16,7 @@ const {Toolset} = require('toolset');
 
 // all global variables are mentioned below
 
-var indexHtmlFilePath = path.resolve('./components/html/index.html')
+var indexHtmlFilePath = path.resolve('./components/html/index.html').replaceAll('\\', '/');
 
 // creating splashToolset object
 const splashToolset = new Toolset(indexHtmlFilePath);
