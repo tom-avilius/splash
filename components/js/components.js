@@ -7,7 +7,7 @@ const { app, BrowserWindow, Menu, MenuItem, electron} = require('electron');
 const path = require('path');
 
 // importing toolset
-const {Toolset} = require('toolset');
+const {Toolset} = require(path.join(__dirname, "toolset"));
 
 // ------------END OF IMPORTS------------------
 

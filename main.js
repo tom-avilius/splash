@@ -5,10 +5,10 @@
 const path = require('path');
 
 // importing the splashMainWindow for splash application
-const {SplashMainWindow} = require('components');
+const {SplashMainWindow} = require(path.join(__dirname, "components/js/components"));
 
 // importing the toolset for splash application
-const {Toolset} = require('toolset');
+const {Toolset} = require(path.join(__dirname, "components/js/toolset"));
 
 // ----------END OF IMPORTS---------------------
 
