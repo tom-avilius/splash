@@ -263,11 +263,31 @@ footer a {
     transition: all ease 0.4s;
     font-size: 1.2rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .vnav-item a {
 
     text-decoration: none;
     color: white;
+
+    
+}
+
+.vnav-item:hover {
+
+    border-bottom: 0.1rem solid white;
+    /* border-radius: 1.5rem; */
+    padding: 0.5rem;
+
+    box-shadow: 0 8px 6px -6px #bc13fe;
+}
+
+.vnav-item-click {
+
+    border-bottom: 0.1rem solid white;
+    /* border-radius: 1.5rem; */
+    padding: 0.5rem;
+
+    box-shadow: 0 8px 6px -6px #bc13fe;
 }
