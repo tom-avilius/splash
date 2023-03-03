@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+br {
+    padding-bottom: 15px;
+}
+
 .color-black {
 
     color: black;
@@ -32,6 +36,33 @@
 
     position: absolute;
     padding-left: 15%;
+
+    text-align: left;
+}
+
+.container-doc .content div h3 {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+}
+
+.container-doc .content div h2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    padding: 20px 0 10px;
+}
+
+.container-doc .content div ul {
+
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+}
+
+.container-doc .content div ul li {
+
+    padding-bottom: 5px;
 }
 
 .content {
@@ -270,7 +301,6 @@ footer a {
 
     text-decoration: none;
     color: white;
-
     
 }
 
@@ -281,6 +311,7 @@ footer a {
     padding: 0.5rem;
 
     box-shadow: 0 8px 6px -6px #bc13fe;
+    cursor: pointer;
 }
 
 .vnav-item-click {
