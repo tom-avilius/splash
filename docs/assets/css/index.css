@@ -11,6 +11,29 @@
     border-color: black;
 }
 
+.container-doc {
+
+    display: flex;
+    height: 100vh;
+}
+
+.container-doc .content {
+
+    width: 100%;
+    background-color: #6B728E;
+}
+
+.container-doc .content h1 {
+
+    padding-left: 20%;
+}
+
+.container-doc .content div {
+
+    position: absolute;
+    padding-left: 15%;
+}
+
 .content {
 
     padding: 12% 10% 1% 10%;
@@ -218,4 +241,33 @@ footer a {
 
     font-size: 1.5rem;
     transition: all ease 0.4s;
+}
+
+.vertical-nav {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    padding-top: 8%;
+    height: 100vh;
+    width: 20%;
+    background-color: #474E68;
+    align-items: center;
+}
+
+.vnav-item {
+
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    transition: all ease 0.4s;
+    font-size: 1.2rem;
+
+    margin-bottom: 20px;
+}
+
+.vnav-item a {
+
+    text-decoration: none;
+    color: white;
 }
