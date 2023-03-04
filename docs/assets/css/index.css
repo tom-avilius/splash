@@ -18,13 +18,13 @@ br {
 .container-doc {
 
     display: flex;
-    height: 100vh;
 }
 
 .container-doc .content {
 
     width: 100%;
     background-color: #6B728E;
+    padding-right: 3%;
 }
 
 .container-doc .content h1 {
@@ -34,7 +34,6 @@ br {
 
 .container-doc .content div {
 
-    position: absolute;
     padding-left: 15%;
 
     text-align: left;
@@ -44,7 +43,7 @@ br {
 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-
+    font-size: 1.3rem;
 }
 
 .container-doc .content div h2 {
@@ -58,6 +57,7 @@ br {
 
     font-family: 'Inter', sans-serif;
     list-style-type: none;
+    font-size: 1.1rem;
 }
 
 .container-doc .content div ul li {
@@ -307,7 +307,6 @@ footer a {
 .vnav-item:hover {
 
     border-bottom: 0.1rem solid white;
-    /* border-radius: 1.5rem; */
     padding: 0.5rem;
 
     box-shadow: 0 8px 6px -6px #bc13fe;
@@ -317,7 +316,6 @@ footer a {
 .vnav-item-click {
 
     border-bottom: 0.1rem solid white;
-    /* border-radius: 1.5rem; */
     padding: 0.5rem;
 
     box-shadow: 0 8px 6px -6px #bc13fe;

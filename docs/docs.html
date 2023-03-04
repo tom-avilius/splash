@@ -29,8 +29,8 @@
         
         <div class="vertical-nav">
             <ul>
-                <li class="vnav-item vnav-item-click" id="vnav1"><a href="#">Installation</a></li>
-                <li class="vnav-item" id="vnav2"><a href="#">lol</a></li>
+                <li class="vnav-item vnav-item-click" id="vnav1"><a href="#installation">Installation</a></li>
+                <li class="vnav-item" id="vnav2"><a href="#theme">Installing a theme</a></li>
             </ul>
             
 
@@ -41,10 +41,15 @@
             <h1>
                 Documentation for the User
             </h1>
-            <div>
+
+            <br>
+
+            <div id="installation">
+
                 <h3>For now splash only supports linux platform, windows support is under progress and is expected by late April 2023.</h3>
 
                 <h2>Installation Instructions</h2>
+
                     <ul>
                         <li>
                             Click on this <a href="">link</a> to download splash for linux. Support for windows will be added by late April 2023.
@@ -56,9 +61,41 @@
                             (optional) Add the application to the list of startup programs. A simple google search can reveal in depth how to do it. However, you can also do a search in your system to find the setting.
                         </li>
                         <li>
-                            Splash installation is complete. To install themes checkout this.
+                            Splash installation is complete. To install themes checkout this <a href="">link</a>.
+                        </li>
+                        <li>
+                            <strong>Encountered an error?</strong> Report an <a href="">issue</a> on gitub or use the issue <a href="">contact me form.</a> I will revert back as soon as possible.
                         </li>
                     </ul>
+            </div>
+
+            <br>
+
+            <div id="theme">
+
+                <h2>Installing a theme</h2>
+
+                <ul>
+                    <li>
+                        Download a desired theme from the <a href="">themes section</a>  of the splash website.
+                    </li>
+                    <li>
+                        Unarchive the theme, if it is archived.
+                    </li>
+                    <li>
+                        Move the theme folder (generally with the same name as that of the theme) into any directory or location where it would be safe and not be deleted. I recommend you to move it inside the documents folder.
+                    </li>
+                    <li>
+                        Open the theme folder you moved and find a file with the same name as that of the theme itself and ends with '.html' extension. Example: <span>themeName.html</span>. Right click on the file and copy the (absolute) path of the file.
+                    </li>
+                    <li>
+                        Head to the documents folder of your PC and find a folder named 'splash'. Open the folder. Inside the folder you will find a 'config.json' file. Open the file in a text editor (notepad) and change the text following the 'path:' key. Do not change anything else. Do not remove any inverted quotes.
+                    </li>
+                    <li>
+                        If you encountered any problem during any procedure, please reach out to me using the issue <a href="">contact me form</a> or by opening an <a href="">issue</a> on github.
+                    </li>
+                </ul>
+
             </div>
         </div>
 
