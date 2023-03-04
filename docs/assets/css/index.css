@@ -29,7 +29,7 @@ br {
 
 .container-doc .content h1 {
 
-    padding-left: 20%;
+    padding-left: 13%;
 }
 
 .container-doc .content div {
@@ -319,4 +319,11 @@ footer a {
     padding: 0.5rem;
 
     box-shadow: 0 8px 6px -6px #bc13fe;
+}
+
+.vertical-nav p {
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
 }
