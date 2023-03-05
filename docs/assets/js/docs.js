@@ -5,6 +5,7 @@
 const vnav1 = document.getElementById('vnav1');
 const vnav2 = document.getElementById('vnav2');
 const vnav3 = document.getElementById('vnav3');
+const vnav4 = document.getElementById('vnav4');
 
 // ---------------------END OF DECLARATIONS-------------------------
 
@@ -19,6 +20,7 @@ vnav1.addEventListener('click', (event) => {
 
     vnav2.classList.remove('vnav-item-click');
     vnav3.classList.remove('vnav-item-click');
+    vnav4.classList.remove('vnav-item-click');
 });
 
 
@@ -29,6 +31,7 @@ vnav2.addEventListener('click', (event) => {
 
     vnav1.classList.remove('vnav-item-click');
     vnav3.classList.remove('vnav-item-click');
+    vnav4.classList.remove('vnav-item-click');
 });
 
 // adding click event listener to vnav3 to simulate click behaviour
@@ -38,4 +41,15 @@ vnav3.addEventListener('click', (event) => {
 
     vnav1.classList.remove('vnav-item-click');
     vnav2.classList.remove('vnav-item-click');
+    vnav4.classList.remove('vnav-item-click');
+})
+
+// adding click event listener to vnav4 to simulate click behaviour
+vnav4.addEventListener('click', (event) => {
+
+    vnav4.classList.add('vnav-item-click');
+
+    vnav1.classList.remove('vnav-item-click');
+    vnav2.classList.remove('vnav-item-click');
+    vnav3.classList.remove('vnav-item-click');
 })
