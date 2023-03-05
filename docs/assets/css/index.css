@@ -53,7 +53,7 @@ br {
     padding: 20px 0 10px;
 }
 
-.container-doc .content div ul {
+.container-doc .content div ul, .container-doc .content div p {
 
     font-family: 'Inter', sans-serif;
     list-style-type: none;
@@ -244,6 +244,11 @@ footer a {
     box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
 }
 
+.inline {
+
+    display: inline;
+}
+
 .nav-item {
 
     display: inline-block;
@@ -268,10 +273,43 @@ footer a {
     box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
 }
 
+.note {
+
+    background-color: #404258;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
 .p-hover {
 
     font-size: 1.5rem;
     transition: all ease 0.4s;
+}
+
+table, th, td{
+
+    padding: 5px;
+}
+
+th, td {
+
+    padding-right: 50px;
+}
+
+td {
+
+    font-family: 'Inter', sans-serif;
+}
+
+th {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .vertical-nav {

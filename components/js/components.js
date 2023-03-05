@@ -2,7 +2,7 @@
 // all imports are mentioned below
 
 // importing electron modules
-const { app, BrowserWindow, Menu, MenuItem, electron} = require('electron');
+const { app, BrowserWindow, Menu, MenuItem} = require('electron');
 
 const path = require('path');
 
@@ -96,7 +96,7 @@ class SplashMainWindow {
             // creating menu for main window to enable shortcuts
             // this menu is invisible
 
-            const menu = new Menu()
+            const menu = new Menu();
 
             menu.append(new MenuItem({
                 label: 'Shortcuts',
