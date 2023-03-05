@@ -44,6 +44,7 @@
             <br>
             <ul>
                 <li class="vnav-item" id="vnav3"><a href="#intro">Getting Ready</a></li>
+                <li class="vnav-item" id="vnav4"><a href="#file-struct">File Structure</a></li>
             </ul>
             
 
@@ -177,7 +178,7 @@
                <br>
 
                <h3>config.json File</h3>
-               <p>This file can be found in the documents folder of the PC. it contains the following data: </p>
+               <p>This file can be found in the documents under the splash folder of the PC. it contains the following data: </p>
                <table>
                 <tr>
                     <th>Key</th>
@@ -198,15 +199,26 @@
                <span class="note"> Anything within the double quotes can be changed. For openDevTools only possible values are true and false without double quotes.</span>
             </div>
 
-            <br>
+            <br id="file-struct">
             <br>
             <br>
             
             <div>
 
-                <h2></h2>
+                <h2>File Structure</h2>
+                <p>
+                    Whenever splash application is installed a folder by the name of splash is created under the documents directory of the PC.
+                    Inside the splash folder you will find config.json file. This file is very important to splash as it contains the location of
+                    of the html file to render at the splash window.
+                </p>
+
+                <p>
+                    While creating or adding themes, I recommend that you store the theme folder inside the splash folder where the cannot be disturbed.
+                    Always remember to change the htmlFile key's value in the config.json file when adding a new theme.
+                </p>
 
             </div>
+
         </div>
 
    </div>
