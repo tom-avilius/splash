@@ -9,6 +9,14 @@ br {
     padding-bottom: 15px;
 }
 
+.code {
+    background-color: #464861;
+    margin-top: 10px;
+    width: 50vw;
+    padding: 5px;
+    /* color: white; */
+}
+
 .color-black {
 
     color: black;
@@ -63,6 +71,11 @@ br {
 .container-doc .content div ul li {
 
     padding-bottom: 5px;
+}
+
+.container-doc .content div ul li .code {
+
+    padding-left: 0;
 }
 
 .content {

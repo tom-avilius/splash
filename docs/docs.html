@@ -219,6 +219,111 @@
 
             </div>
 
+            <br>
+            <br>
+
+            <div>
+                <h2>Hello World</h2>
+                <p>This section will help you display a hello world message in your main window. </p>
+
+                <ul>
+                    <li>
+                        Create a new folder with whatever name you want to associate your theme with. <span class="note">Example: helloWorld </span>
+                    </li>
+                    <li>
+                        Head inside the folder and create the following files: <br> 
+                       <ul>
+                            <li>
+                                <span class="note">index.html </span> <br> 
+                            </li>
+                            <li>
+                                <span class="note">index.js </span>  <br>
+                            </li>
+                            <li>
+                                <span class="note">index.css </span>
+                            </li>
+                       </ul>
+                    </li>
+                    <li>
+                        Open the index.html file inside a text editor and add the following code: <br>
+                        <div class="code">
+<code>
+<pre>
+    &lt;!DOCTYPE html&gt;                                            <button class="copy-btn" id="index-html-copy">copy</button> 
+    &lt;html&gt; 
+        &lt;head&gt; 
+            &lt;meta charset=&quot;UTF-8&quot;&gt; 
+            &lt;title&gt;Splash&lt;/title&gt; 
+        &lt;/head&gt; 
+        
+        &lt;body&gt; 
+            &lt;div&gt; 
+                &lt;h1&gt; 
+                    Hello World!!
+                &lt;/h1&gt; 
+            &lt;/div&gt; 
+        &lt;/body&gt; 
+
+        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+    &lt;/html&gt;
+</pre>
+</code>
+                        </div>
+                    </li>
+
+                    <li>
+                        <br>
+                        Save the index.html file and open the index.css file inside a text editor and add the following styles:
+
+                        <div class="code">
+<code>
+<pre>
+    div {                                                      <button class="copy-btn" id="index-css-copy">copy</button>
+
+        background-color: black; 
+        flex-wrap: wrap; 
+        display: flex; 
+        flex-direction: column; 
+        align-content: center;
+    }
+
+    h1 {
+
+        color: white;
+    }
+</pre>
+</code>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <br>
+                        Save the index.css file and open the index.js file inside a text editor and add the following code:
+
+                        <div class="code">
+
+<code>
+<pre>
+    window.alert('Success Creating my own Theme!!');           <button class="copy-btn" id="index-js-copy">copy</button>
+</pre>
+</code>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <br>
+                        Save the index.css file. Copy the absolute path of the index.html file and paste it inside the double quotes of the htmlFile key of the config.json file. 
+                    </li>
+                </ul>
+
+                <p>
+                    <br>
+                    From the above example it must be clear to you that the html, css and javascript needed to create your own theme in splash is the same as
+                    the standard html needed for websites. I encourage you to look at the winter's kiss' code as an example to create your own theme.
+                </p>
+            </div>
         </div>
 
    </div>
