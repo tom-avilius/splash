@@ -325,6 +325,56 @@
                     the standard html needed for websites. I encourage you to look at the winter's kiss' code as an example to create your own theme.
                 </p>
             </div>
+
+            <div>
+                <h2>Available Functions</h2>
+                <p>To aid in the development process splash offers certain functions that will allow you to perform certain tasks that are otherwise
+                    tedious, inherent or very common towards the development of themes. A list of the objects that provide these functions: <br>
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Object</th>
+                        <th>Use</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            terminal
+                        </td>
+                        <td>
+                            Provides a way to communicate with the terminal of the operating system via the terminal.execute('command') method.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            os
+                        </td>
+                        <td>
+                            Provides info regarding the cpu usage and free memory.
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>os.cpu</h3>
+                <p>This method allows you to obtain data regarding the cpu utilization. <br>
+                    <code>Syntax: var cpu = os.cpu();</code>
+                </p>
+
+                <h3>os.memory</h3>
+                <p>This method allows you to obtain data regarding the available free memory(RAM). <br>
+                    <code>Syntax: var memory = os.memory();</code>
+                </p>
+
+                <h3>terminal.execute</h3>
+                <p>This method allows you to execute commands in the terminal or command line of the operating system. This can be used to create
+                    docks and for almost anything. <br>
+                    <code>Syntax: terminal.execute('command');</code>
+                </p>
+            </div>
         </div>
 
    </div>
