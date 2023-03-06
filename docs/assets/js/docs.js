@@ -7,6 +7,7 @@ const vnav2 = document.getElementById('vnav2');
 const vnav3 = document.getElementById('vnav3');
 const vnav4 = document.getElementById('vnav4');
 const vnav5 = document.getElementById('vnav5');
+const vnav6 = document.getElementById('vnav6');
 
 // ---------------------END OF DECLARATIONS-------------------------
 
@@ -23,6 +24,7 @@ vnav1.addEventListener('click', (event) => {
     vnav3.classList.remove('vnav-item-click');
     vnav4.classList.remove('vnav-item-click');
     vnav5.classList.remove('vnav-item-click');
+    vnav6.classList.remove('vnav-item-click');
 });
 
 
@@ -35,6 +37,7 @@ vnav2.addEventListener('click', (event) => {
     vnav3.classList.remove('vnav-item-click');
     vnav4.classList.remove('vnav-item-click');
     vnav5.classList.remove('vnav-item-click');
+    vnav6.classList.remove('vnav-item-click');
 });
 
 // adding click event listener to vnav3 to simulate click behaviour
@@ -46,6 +49,7 @@ vnav3.addEventListener('click', (event) => {
     vnav2.classList.remove('vnav-item-click');
     vnav4.classList.remove('vnav-item-click');
     vnav5.classList.remove('vnav-item-click');
+    vnav6.classList.remove('vnav-item-click');
 })
 
 // adding click event listener to vnav4 to simulate click behaviour
@@ -57,6 +61,7 @@ vnav4.addEventListener('click', (event) => {
     vnav2.classList.remove('vnav-item-click');
     vnav3.classList.remove('vnav-item-click');
     vnav5.classList.remove('vnav-item-click');
+    vnav6.classList.remove('vnav-item-click');
 })
 
 // adding click event listener to vnav5 to simulate click behaviour
@@ -68,4 +73,17 @@ vnav5.addEventListener('click', (event) => {
     vnav2.classList.remove('vnav-item-click');
     vnav3.classList.remove('vnav-item-click');
     vnav4.classList.remove('vnav-item-click');
+    vnav6.classList.remove('vnav-item-click');
+});
+
+// adding click event listener to vnav6 to simulate click behaviour
+vnav6.addEventListener('click', (event) => {
+
+    vnav6.classList.add('vnav-item-click');
+
+    vnav1.classList.remove('vnav-item-click');
+    vnav2.classList.remove('vnav-item-click');
+    vnav3.classList.remove('vnav-item-click');
+    vnav4.classList.remove('vnav-item-click');
+    vnav5.classList.remove('vnav-item-click');
 });
