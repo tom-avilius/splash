@@ -303,6 +303,60 @@ footer a {
     transition: all ease 0.4s;
 }
 
+.secondary-navbar {
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.secondary-navbar a, .secondary-navbar button {
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.secondary-navbar a {
+
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.secondary-navbar a:hover {
+ 
+    opacity: 85%;
+}
+
+.secondary-navbar button {
+
+    /* background-color: #474E68; */
+    background-color: #50577A;
+    border-radius: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 8px 14px;
+    border: 0 white solid;
+    box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    user-select: none;
+    cursor: pointer;
+    transition: all ease 0.4s; 
+    color: white;
+}
+
+.secondary-navbar button:hover {
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
+}
+
+.showcase {
+
+    width: 40vw;
+    padding: 6%;
+}
+
 table, th, td{
 
     padding: 5px;
