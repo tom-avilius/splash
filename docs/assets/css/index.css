@@ -86,6 +86,27 @@ br {
     text-align: center;
 }
 
+.content h2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    padding: 20px 0 10px;
+    text-align: left;
+}
+
+.content h2 a {
+    
+    /* text-decoration: none; */
+    color: black;
+}
+
+.community-p {
+
+    text-align: left;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
 .content-i {
 
     background-color: #6B728E;
