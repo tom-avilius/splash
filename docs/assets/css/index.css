@@ -178,6 +178,11 @@ br {
     font-weight: 500;
 }
 
+.copy-btn {
+
+    user-select: none;
+}
+
 .download-btn {
     
     font-family: 'Montserrat', sans-serif;
