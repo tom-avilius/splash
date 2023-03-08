@@ -52,22 +52,23 @@
 
         </div>
 
-        <div class="content">
+        <div class="content" id="installation">
 
             <h1>
                 Documentation 
             </h1>
 
-            <div id="installation">
+            <div>
 
                 <br>
 
             
+                <span id="theme"></span>
 
                 <h3>For now splash only supports linux platform, windows support is under progress and is expected by late April 2023.</h3>
 
                 <h2>Installation Instructions</h2>
-
+                
                     <ul>
                         <li>
                             Click on this <a href="">link</a> to download splash for linux. Support for windows will be added by late April 2023.
@@ -75,7 +76,6 @@
                         <li>
                             Now open the archive and click on the package. Wait for the package to be installed by you package manager. 
                         </li>
-                        <span id="theme"></span>
                         <li>
                             (optional) Add the application to the list of startup programs. A simple google search can reveal in depth how to do it. However, you can also do a search in your system to find the setting.
                         </li>
@@ -154,7 +154,7 @@
 
                <h3>Important Shortcuts</h3>
 
-               <table class="lol">
+               <table>
                 <tr>
                     <th>Action</th>
                     <th>Binding</th>
@@ -175,7 +175,7 @@
 
                <span class="note">For these shortcuts to work, splash window must be in focus.</span>
 
-               <br>
+               <br id="file-struct">
                <br>
                <br>
 
@@ -201,13 +201,13 @@
                <span class="note"> Anything within the double quotes can be changed. For openDevTools only possible values are true and false without double quotes.</span>
             </div>
 
-            <br id="file-struct">
+            <br>
             <br>
             <br>
             
             <div>
 
-                <h2>File Structure</h2>
+                <h2 id="hello-world">File Structure</h2>
                 <p>
                     Whenever splash application is installed a folder by the name of splash is created under the documents directory of the PC.
                     Inside the splash folder you will find config.json file. This file is very important to splash as it contains the location of
@@ -328,7 +328,7 @@
             </div>
 
             <div>
-                <h2>Available Functions</h2>
+                <h2 id="functions">Available Functions</h2>
                 <p>To aid in the development process splash offers certain functions that will allow you to perform certain tasks that are otherwise
                     tedious, inherent or very common towards the development of themes. A list of the objects that provide these functions: <br>
                 </p>
