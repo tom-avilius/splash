@@ -119,6 +119,21 @@ br {
     width: 100vh;
 }
 
+.content-i p {
+
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.content-i p a {
+    
+    color: black;
+}
+
+.content-i p a:visited {
+
+    color: black;
+}
+
 .content div {
 
     transition: all ease 0.4s;
