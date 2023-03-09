@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+a {
+
+    color: black;
+}
+
+a:visited {
+
+    color: black;
+}
+
 br {
     padding-bottom: 15px;
 }
@@ -125,7 +135,7 @@ br {
 }
 
 .content-i p a {
-    
+
     color: black;
 }
 
