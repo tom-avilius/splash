@@ -15,6 +15,12 @@ a:visited {
     color: black;
 }
 
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
 br {
     padding-bottom: 15px;
 }
@@ -239,7 +245,7 @@ br {
 }
 
 footer {
-
+    
     text-align: center;
     background-color: #344D67;
     padding: 2% 7%;
@@ -511,4 +517,9 @@ th {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
+}
+
+.wrapper {
+
+    height: 100vh;
 }
