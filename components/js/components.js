@@ -58,6 +58,11 @@ class SplashMainWindow {
     // function to start electron app after initialization
     start() {
 
+        app.setLoginItemSettings ( {
+
+            openAtLogin: true,
+        });
+
         app.whenReady().then( () => {
             const { screen } = require('electron');
             console.log('Electron initialization finished..');
