@@ -1,4 +1,6 @@
 
+// all declarations are mentioned below
+
 // getting the content divs
 const content1 = document.getElementById('content-1');
 const content2 = document.getElementById('content-2');
@@ -21,6 +23,18 @@ const d1 = document.getElementById('d-1');
 const d2 = document.getElementById('d-2');
 const d3 = document.getElementById('d-3');
 
+// the dropdown button DOM element
+const dropdownButton = document.getElementById('dropdown-arrow');
+// the content DOM element where the website content is displayed
+const contentDOM = document.getElementsByClassName('content')[0];
+// the footer DOM
+const footerDOM = document.getElementsByTagName('footer')[0];
+// the additional navbar to show when the dropdown 
+// button is clicked
+const additionalNavbar = document.getElementsByClassName('navbar-additional')[0];
+
+
+// -----------------------------------------------------------------
 
 // adding hover behaviour to content-1
 content1.addEventListener('mouseover', (event) => {
@@ -74,4 +88,26 @@ content3.addEventListener('mouseover', (event) => {
         d3.classList.add('hidden');
         content3.removeEventListener('mouseleave', (event) => {});
     });
+});
+
+// adding event listener to the dropdown button to
+// enable dropdown of the navbar
+dropdownButton.addEventListener("click", (event) => {
+
+    console.log('heh')
+    additionalNavbar.classList.remove('hidden');
+});
+
+// adding event listener to the footer DOM 
+// to hide the dropdown navbar 
+footerDOM.addEventListener('click', (event) => {
+
+    additionalNavbar.classList.add('hidden');
+});
+
+// adding event listener to the content DOM
+// to hide the dropdown navbar
+contentDOM.addEventListener('click', (event) => {
+
+    additionalNavbar.classList.add('hidden');
 });

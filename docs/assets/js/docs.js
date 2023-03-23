@@ -9,6 +9,16 @@ const vnav4 = document.getElementById('vnav4');
 const vnav5 = document.getElementById('vnav5');
 const vnav6 = document.getElementById('vnav6');
 
+// the dropdown button DOM element
+const dropdownButton = document.getElementById('dropdown-arrow');
+// the content DOM element where the website content is displayed
+const contentDOM = document.getElementsByClassName('content')[0];
+// the footer DOM
+const footerDOM = document.getElementsByTagName('footer')[0];
+// the additional navbar to show when the dropdown 
+// button is clicked
+const additionalNavbar = document.getElementsByClassName('navbar-additional')[0];
+
 // ---------------------END OF DECLARATIONS-------------------------
 
 
@@ -86,4 +96,26 @@ vnav6.addEventListener('click', (event) => {
     vnav3.classList.remove('vnav-item-click');
     vnav4.classList.remove('vnav-item-click');
     vnav5.classList.remove('vnav-item-click');
+});
+
+// adding event listener to the dropdown button to
+// enable dropdown of the navbar
+dropdownButton.addEventListener("click", (event) => {
+
+    console.log('heh')
+    additionalNavbar.classList.remove('hidden');
+});
+
+// adding event listener to the footer DOM 
+// to hide the dropdown navbar 
+footerDOM.addEventListener('click', (event) => {
+
+    additionalNavbar.classList.add('hidden');
+});
+
+// adding event listener to the content DOM
+// to hide the dropdown navbar
+contentDOM.addEventListener('click', (event) => {
+
+    additionalNavbar.classList.add('hidden');
 });
