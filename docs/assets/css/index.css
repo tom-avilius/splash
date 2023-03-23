@@ -49,6 +49,11 @@ br {
     border-color: black;
 }
 
+.contact-info {
+
+    font-size: 1rem;
+}
+
 .container-doc {
 
     display: flex;
@@ -285,17 +290,33 @@ br {
 
 footer {
     
-    text-align: center;
+    
     background-color: #344D67;
-    padding: 2% 7%;
+    padding: 1.5% 7%;
 }
 
 footer a {
 
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+footer a:hover {
+
+    opacity: 80%;
+}
+
+.float-left {
+
+    float: left;
+}
+
+.float-right {
+
+    float: right;
+    text-align: right;
 }
 
 .header {
