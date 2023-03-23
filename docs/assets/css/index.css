@@ -52,6 +52,7 @@ br {
 .contact-info {
 
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .container-doc {
@@ -585,10 +586,10 @@ th {
 
     text-decoration: none;
     color: white;
-    
+    transition: all ease 0.4s;
 }
 
-.vnav-item:hover {
+.vnav-item a:hover {
 
     border-bottom: 0.1rem solid white;
     padding: 0.5rem;
