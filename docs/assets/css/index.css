@@ -19,10 +19,20 @@ body {
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+    background-color: #50577A;
 }
 
 br {
     padding-bottom: 15px;
+}
+
+.break {
+
+    flex-basis: 100%;
+    height: 0;
 }
 
 .code {
@@ -30,7 +40,7 @@ br {
     margin-top: 10px;
     width: 50vw;
     padding: 5px;
-    /* color: white; */
+    width: auto;
 }
 
 .color-black {
@@ -96,7 +106,8 @@ br {
 
 .content {
 
-    padding: 12% 10% 1% 10%;
+    padding: 5% 10% 1% 10%;
+    padding-bottom: 5%;
     background-color: #50577A;
     transition: all ease 0.4s;
     text-align: center;
@@ -127,12 +138,14 @@ br {
 
     background-color: #6B728E;
     text-align: center;
-    padding: 4% 7%;
+    padding-bottom: 2%
 }
 
 .content-i img {
 
-    width: 100vh;
+    width: 70vw;
+    padding-top: 3%;
+    padding-bottom: 5px;
 }
 
 .content-i p {
@@ -193,6 +206,11 @@ br {
     color: white;
 }
 
+.container img {
+
+    margin-bottom: 2%;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -212,6 +230,16 @@ br {
 .copy-btn {
 
     user-select: none;
+}
+
+#doc-body {
+
+    background-color: #404258;
+}
+
+#doc-header {
+
+    position: fixed;
 }
 
 .download-btn {
@@ -237,6 +265,17 @@ br {
 
     /* color: #50577A; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
+}
+
+#dropdown-arrow {
+
+    padding-left: 15px;
+    cursor: pointer;
+    transition: none;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .font-2rem {
@@ -266,8 +305,8 @@ footer a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    position: fixed;
     width: 80%;
+    user-select: none;
 }
 
 .header a {
@@ -337,9 +376,37 @@ footer a {
     box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
 }
 
+.img-text {
+
+    font-weight: 400;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 .inline {
 
     display: inline;
+}
+
+#installation {
+
+    padding-top: 10%;
+}
+
+nav {
+
+    user-select: none;
+}
+
+.navbar-additional {
+
+    margin-top:  15px;
+}
+
+.navbar-additional  ul li{
+
+    display: block;
+    margin-bottom: 5px;
 }
 
 .nav-item {
@@ -347,6 +414,7 @@ footer a {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     transition: all ease 0.4s;
+    user-select: none;
 
     margin: 0 20px;
 }
@@ -387,9 +455,11 @@ footer a {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 15px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    user-select: none;
 }
 
 .secondary-navbar a, .secondary-navbar button {
@@ -433,7 +503,7 @@ footer a {
 
 .showcase {
 
-    width: 40vw;
+    width: 50vw;
     margin: 6%;
     transition: all ease 0.4s;
 }
@@ -468,6 +538,7 @@ th {
 .vertical-nav {
 
     display: flex;
+    user-select: none;
     flex-direction: column;
     position: fixed;
     top: 10%;
@@ -481,6 +552,7 @@ th {
 .vnav-item {
 
     list-style-type: none;
+    user-select: none;
     font-family: "Montserrat", sans-serif;
     transition: all ease 0.4s;
     font-size: 1.2rem;
@@ -519,7 +591,81 @@ th {
     font-size: 1.2rem;
 }
 
-.wrapper {
 
-    height: 100vh;
+@media screen and (max-width: 1300px){
+    
+    .showcase {
+
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .code {
+
+        width: unset;
+    }
+
+    .vertical-nav {
+
+        width: 30%;
+    }
+
+    .container-doc .content {
+
+        padding-left: 20%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    #doc-header {
+
+        position: relative;
+    }
+    
+    .navbar {
+
+        display: none;
+    }
+
+    .header {
+
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .container-doc .content {
+
+        padding-left: 0;
+        width: fit-content;
+        padding-right: 0;
+    }
+
+    .container-doc .content div, .container-doc .content h1 {
+
+        padding-left: 1px;
+    }
+ 
+    .content-i {
+
+        padding-bottom: 10px;
+    }
+
+    .content-i img {
+
+        width: 90vw;
+    }
+
+    #dropdown-arrow {
+
+        display: inline;
+    }
+
+    .vertical-nav {
+
+        display: none;
+    }
 }

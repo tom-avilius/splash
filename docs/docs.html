@@ -10,9 +10,9 @@
     <title>splash</title>
 </head>
 
-<body>
+<body id="doc-body">
 
-    <header class="header">
+    <header class="header" id="doc-header">
         <a href="./index.html"><h1>splash</h1></a>
         <nav class="navbar">
             <ul>
@@ -22,7 +22,19 @@
                 <li class="nav-item"><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button>Download</button>
+        <div>
+            <button>Download</button>
+            <button id="dropdown-arrow" class="hidden">&#9776;</button>
+            <div class="break"></div>
+            <nav class="navbar-additional hidden">
+                <ul>
+                    <li class="nav-item"><a href="./docs.html">Docs</a></li>
+                    <li class="nav-item"><a href="./themes.html">Themes</a></li>
+                    <li class="nav-item"><a href="./community.html">Community</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
    <div class="container-doc">
@@ -251,23 +263,23 @@
                         <div class="code">
 <code>
 <pre>
-    &lt;!DOCTYPE html&gt;                                         <!--<button class="copy-btn" id="index-html-copy">copy</button>-->
-    &lt;html&gt; 
-        &lt;head&gt; 
-            &lt;meta charset=&quot;UTF-8&quot;&gt; 
-            &lt;title&gt;Splash&lt;/title&gt; 
-        &lt;/head&gt; 
-        
-        &lt;body&gt; 
-            &lt;div&gt; 
-                &lt;h1&gt; 
-                    Hello World!!
-                &lt;/h1&gt; 
-            &lt;/div&gt; 
-        &lt;/body&gt; 
+&lt;!DOCTYPE html&gt;                                         <!--<button class="copy-btn" id="index-html-copy">copy</button>-->
+&lt;html&gt; 
+    &lt;head&gt; 
+        &lt;meta charset=&quot;UTF-8&quot;&gt; 
+        &lt;title&gt;Splash&lt;/title&gt; 
+    &lt;/head&gt; 
+    
+    &lt;body&gt; 
+        &lt;div&gt; 
+            &lt;h1&gt; 
+                Hello World!!
+            &lt;/h1&gt; 
+        &lt;/div&gt; 
+    &lt;/body&gt; 
 
-        &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
-    &lt;/html&gt;
+    &lt;script src=&quot;./index.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
 </pre>
 </code>
                         </div>
@@ -280,19 +292,19 @@
                         <div class="code">
 <code>
 <pre>
-    div {                                                      <!--<button class="copy-btn" id="index-css-copy">copy</button>-->
+div {                                                      <!--<button class="copy-btn" id="index-css-copy">copy</button>-->
 
-        background-color: black; 
-        flex-wrap: wrap; 
-        display: flex; 
-        flex-direction: column; 
-        align-content: center;
-    }
+    background-color: black; 
+    flex-wrap: wrap; 
+    display: flex; 
+    flex-direction: column; 
+    align-content: center;
+}
 
-    h1 {
+h1 {
 
-        color: white;
-    }
+    color: white;
+}
 </pre>
 </code>
 
@@ -307,7 +319,7 @@
 
 <code>
 <pre>
-    window.alert('Success Creating my own Theme!!');           <!--<button class="copy-btn" id="index-js-copy">copy</button>-->
+window.alert('Success Creating my own Theme!!');           <!--<button class="copy-btn" id="index-js-copy">copy</button>-->
 </pre>
 </code>
 
