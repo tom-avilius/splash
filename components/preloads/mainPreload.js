@@ -11,9 +11,10 @@ const osUtil = require('os-utils');
 // class to enable draggability for elements in the splash window
 class Draggable {
 
-    constructor (element) {
+    constructor (element, elementName) {
 
         this.element = element;
+        this.name = elementName+'';
 
         // setting the position of the element as absolute
         this.element.style.position = 'absolute';
@@ -29,12 +30,12 @@ class Draggable {
             try {
 
                 // getting the X and Y positions of the element
-                this.posX = localStorage.getItem(element+'PosX');
-                this.posY = localStorage.getItem(element+'PosY');
+                this.posX = localStorage.getItem(this.name+'PosX');
+                this.posY = localStorage.getItem(this.name+'PosY');
 
                 // setting the top and left offset of the element
-                this.element.style.left = localStorage.getItem(element+'OffsetLeft');
-                this.element.style.top = localStorage.getItem(element+'OffsetTop');
+                this.element.style.left = localStorage.getItem(this.name+'OffsetLeft');
+                this.element.style.top = localStorage.getItem(this.name+'OffsetTop');
             } catch (err) {
 
                 console.error(err);
@@ -75,11 +76,11 @@ class Draggable {
         this.posY = event.clientY;
 
         // saving data to local storage
-        localStorage.setItem(this.element+'PosX', this.posX+'');
-        localStorage.setItem(this.element+'PosY', this.posY+'');
+        localStorage.setItem(this.name+'PosX', this.posX+'');
+        localStorage.setItem(this.name+'PosY', this.posY+'');
 
-        localStorage.setItem(this.element+'OffsetLeft', (this.element.offsetLeft + changeX) + 'px');
-        localStorage.setItem(this.element+'OffsetTop', (this.element.offsetTop + changeY) + 'px');
+        localStorage.setItem(this.name+'OffsetLeft', (this.element.offsetLeft + changeX) + 'px');
+        localStorage.setItem(this.name+'OffsetTop', (this.element.offsetTop + changeY) + 'px');
     }
 
     // to handle mouse up event to abort dragging and remove event listeners attached to the document
@@ -88,15 +89,6 @@ class Draggable {
         document.removeEventListener('mousemove', this.mouseMoveHandler);
         document.removeEventListener('mouseup', this.mouseUpHandler);
     }
-}
-
-// to measure time
-function startTime(callback) {
-    var date = new Date();
-    
-    callback(date);
-
-    setTimeout(startTime, 1000)   
 }
 
 // api to extend terminal functionality
@@ -129,7 +121,7 @@ contextBridge.exposeInMainWorld('os', {
 // api to extend functionality relating to the html elements
 contextBridge.exposeInMainWorld('element', {
 
-    draggable: (element) => new Draggable(element),
+    draggable: (element, name) => new Draggable(element, name),
 })
 
 // api to extend memory capabilities - storing, retreiving data
