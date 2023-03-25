@@ -90,6 +90,16 @@ class Draggable {
     }
 }
 
+// to measure time
+function startTime(callback) {
+    var date = new Date();
+    
+    callback(date);
+
+    setTimeout(startTime, 1000)   
+}
+
+// api to extend terminal functionality
 contextBridge.exposeInMainWorld('terminal', {
     execute: async (command, execOptions = {}) => {
         return new Promise((resolve, reject) => {
@@ -107,23 +117,23 @@ contextBridge.exposeInMainWorld('terminal', {
     },
 })
 
-
+// api to extend information regarding the system
 contextBridge.exposeInMainWorld('os', {
     cpu: osUtil.cpuUsage,
 
-    memory: osUtil.freememPercentage,
+    ram: () => { return osUtil.freememPercentage() * 100 },
 
-    platform: osUtil.platform(),
+    platform: () => osUtil.platform(),
 })
 
-
+// api to extend functionality relating to the html elements
 contextBridge.exposeInMainWorld('element', {
 
     draggable: (element) => new Draggable(element),
 })
 
-
-contextBridge.exposeInMainWorld('util', {
+// api to extend memory capabilities - storing, retreiving data
+contextBridge.exposeInMainWorld('disk', {
 
     store: (key, value) => {
 
