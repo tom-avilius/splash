@@ -29,4 +29,48 @@ contextBridge.exposeInMainWorld('os', {
     cpu: osUtil.cpuUsage,
 
     memory: osUtil.freememPercentage,
+
+    platform: osUtil.platform(),
+})
+
+
+// contextBridge.exposeInMainWorld('element', {
+
+//     enableDraggability: class {
+
+//         constructor (element) {
+
+//                 this.element = element;
+                
+//             }
+//     }
+// })
+
+
+contextBridge.exposeInMainWorld('util', {
+
+    store: (key, value) => {
+
+            localStorage.setItem(key+'', value+'');
+        },
+
+    get: (key) => {
+
+            return localStorage.getItem(key+'');
+        },
+
+    free: (key) => {
+
+            localStorage.removeItem(key+'');
+        },
+    
+    clear: () => {
+
+            localStorage.clear();
+        },
+
+    length: () => {
+
+            return localStorage.length;
+        },
 })
