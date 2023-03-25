@@ -7,6 +7,89 @@ const {exec} = require('child_process');
 // importing os-utils module
 const osUtil = require('os-utils');
 
+// always add this class to a div element
+// class to enable draggability for elements in the splash window
+class Draggable {
+
+    constructor (element) {
+
+        this.element = element;
+
+        // setting the position of the element as absolute
+        this.element.style.position = 'absolute';
+        
+        // initializing X and Y pos of element
+        this.posX = 0;
+        this.posY = 0;
+
+        // checking if some data is already stored in the localStorage
+        if (localStorage.length != 0) {
+
+            // expected error might be undefined being returned from the local storage
+            try {
+
+                // getting the X and Y positions of the element
+                this.posX = localStorage.getItem(element+'PosX');
+                this.posY = localStorage.getItem(element+'PosY');
+
+                // setting the top and left offset of the element
+                this.element.style.left = localStorage.getItem(element+'OffsetLeft');
+                this.element.style.top = localStorage.getItem(element+'OffsetTop');
+            } catch (err) {
+
+                console.error(err);
+            }
+        }
+
+        // adding mousedown event listener to the element to know
+        // when the element is being dragged
+        this.element.addEventListener('mousedown', this.mouseDownHandler);
+    }
+
+    // to handle mouse down event to trigger clockging
+    mouseDownHandler = (event) => {
+
+        // finding x and y coordinates of the mouse down event
+        this.posX = event.clientX;
+        this.posY = event.clientY;
+
+        // adding event to the document
+        // these event listeners will be removed at the mouse up event
+        document.addEventListener('mousemove', this.mouseMoveHandler);
+        document.addEventListener('mouseup', this.mouseUpHandler);
+    }
+
+     // to handle dragging when mouse moves
+    mouseMoveHandler = (event) => {
+
+        // the distance mouse has been moved by
+        var changeX = event.clientX - this.posX;
+        var changeY = event.clientY - this.posY;
+
+        // new position of the element
+        this.element.style.left = (this.element.offsetLeft + changeX) + 'px';
+        this.element.style.top = (this.element.offsetTop + changeY) + 'px';
+
+        // set new mouse position
+        this.posX = event.clientX;
+        this.posY = event.clientY;
+
+        // saving data to local storage
+        localStorage.setItem(this.element+'PosX', this.posX+'');
+        localStorage.setItem(this.element+'PosY', this.posY+'');
+
+        localStorage.setItem(this.element+'OffsetLeft', (this.element.offsetLeft + changeX) + 'px');
+        localStorage.setItem(this.element+'OffsetTop', (this.element.offsetTop + changeY) + 'px');
+    }
+
+    // to handle mouse up event to abort dragging and remove event listeners attached to the document
+    mouseUpHandler = () => {
+
+        document.removeEventListener('mousemove', this.mouseMoveHandler);
+        document.removeEventListener('mouseup', this.mouseUpHandler);
+    }
+}
+
 contextBridge.exposeInMainWorld('terminal', {
     execute: async (command, execOptions = {}) => {
         return new Promise((resolve, reject) => {
@@ -34,17 +117,10 @@ contextBridge.exposeInMainWorld('os', {
 })
 
 
-// contextBridge.exposeInMainWorld('element', {
+contextBridge.exposeInMainWorld('element', {
 
-//     enableDraggability: class {
-
-//         constructor (element) {
-
-//                 this.element = element;
-                
-//             }
-//     }
-// })
+    draggable: (element) => new Draggable(element),
+})
 
 
 contextBridge.exposeInMainWorld('util', {
