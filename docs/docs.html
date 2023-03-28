@@ -369,9 +369,24 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                             Provides info provides platform specific details.
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            disk
+                        </td>
+                        <td>
+                            Provides for interacting with the local storage to store and delete data.
+                        </td>
+                    </tr>
                 </table>
 
                 <br>
+
+                <h3>terminal.execute</h3>
+                <p>This method allows you to execute commands in the terminal or command line of the operating system. This can be used to create
+                    docks and for almost anything. <br>
+                    <code>Syntax: terminal.execute('command');</code>
+                </p>
 
                 <h3>os.cpu</h3>
                 <p>This method allows you to obtain data regarding the cpu utilization. <br>
@@ -382,14 +397,38 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                 </p>
 
                 <h3>os.ram</h3>
-                <p>This method return the amount of RAM that is currently being used by all processes. <br>
+                <p>This method returns the amount of RAM that is currently being used by all processes. <br>
                     <code>Syntax: var memory = os.ram();</code>
                 </p>
 
-                <h3>terminal.execute</h3>
-                <p>This method allows you to execute commands in the terminal or command line of the operating system. This can be used to create
-                    docks and for almost anything. <br>
-                    <code>Syntax: terminal.execute('command');</code>
+                <h3>disk.store</h3>
+                <p>This method is used to store data in string or boolean format which can be identified via the key.
+                    <br>
+                    <code>Syntax: disk.store('key', 'value');</code>
+                </p>
+
+                <h3>disk.get</h3>
+                <p>This method will retrive the data that is associated with the specified key. 
+                    <br>
+                    <code>Syntax: var value = disk.get('key');</code>
+                </p>
+
+                <h3>disk.free</h3>
+                <p>This method will delete the data that is associated with the specified key.
+                    <br>
+                    <code>Syntax: disk.free('key');</code>
+                </p>
+
+                <h3>disk.length</h3>
+                <p>This method will return the number of items stored inside the local storage.
+                    <br>
+                    <code>Syntax: var length = disk.length();</code>
+                </p>
+
+                <h3>disk.clear</h3>
+                <p>This method will clear all data stored inside the local storage.
+                    <br>
+                    <code>Syntax: disk.clear();</code>
                 </p>
             </div>
         </div>
