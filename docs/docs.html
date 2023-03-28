@@ -348,7 +348,7 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
 
                 <table>
                     <tr>
-                        <th>Object</th>
+                        <th>api</th>
                         <th>Use</th>
                     </tr>
 
@@ -366,7 +366,7 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                             os
                         </td>
                         <td>
-                            Provides info regarding the cpu usage and free memory.
+                            Provides info provides platform specific details.
                         </td>
                     </tr>
                 </table>
@@ -375,12 +375,15 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
 
                 <h3>os.cpu</h3>
                 <p>This method allows you to obtain data regarding the cpu utilization. <br>
-                    <code>Syntax: var cpu = os.cpu();</code>
+                    <code>Syntax: os.cpu( (usage) => {console.log(usage*100)} );</code> <br>
+                    The parameter usage is passed along with the callback function that stores
+                    the percentage of cpu that is being utilized by all the processes. As usage is 
+                    in percentage multiply it by 100 to get the numerical value.
                 </p>
 
-                <h3>os.memory</h3>
-                <p>This method allows you to obtain data regarding the available free memory(RAM). <br>
-                    <code>Syntax: var memory = os.memory();</code>
+                <h3>os.ram</h3>
+                <p>This method return the amount of RAM that is currently being used by all processes. <br>
+                    <code>Syntax: var memory = os.ram();</code>
                 </p>
 
                 <h3>terminal.execute</h3>
