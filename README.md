@@ -6,10 +6,10 @@ Splash gives you the power to use desktop themes built with the strongest web te
 - Use the industy grade tools easily.
 - Incorporate your favourite web technologies.
 
-**Installation instuctions available at https://tom-avilius.github.io/splash/docs.html **
+**Installation instuctions available at https://spash.tomavilius.com/docs.html**
 
 ### Want to create your own themes?
-**For Develeopr Documentation visit: https://tom-avilius.github.io/splash/docs.html#intro
+**For Develeopr Documentation visit: https://splash.tomavilius.io/docs.html#intro**
 
 
 If you encounter any error feel free to report the issue on github. I will revert back as soon as possible.
