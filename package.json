@@ -20,8 +20,6 @@
   },
   "dependencies": {
     "electron-bottom-window": "^1.0.3",
-    "electron-squirrel-startup": "^1.0.0",
-    "os-utils": "^0.0.14",
-    "ref-napi": "^3.0.3"
+    "electron-squirrel-startup": "^1.0.0"
   }
 }
