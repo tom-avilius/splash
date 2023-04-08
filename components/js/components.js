@@ -7,17 +7,21 @@ const { app, BrowserWindow, Menu, MenuItem} = require('electron');
 // importing the path module
 const path = require('path');
 
-// importing the stick to bottom package to make splash
-// window bottom-most
-const { stickToBottom } = require('electron-bottom-window');
-
 // importing toolset
 const {Toolset} = require(path.join(__dirname, "toolset"));
 
-// ------------END OF IMPORTS------------------
-
 // creating toolset object
 const toolset = new Toolset(path.resolve('./components/html/index.html'));
+
+// importing the stick to bottom package to make splash
+// window bottom-most only needed in windows
+if (toolset.platform != "linux") {
+    
+    const { stickToBottom } = require('electron-bottom-window');
+}
+
+// ------------END OF IMPORTS------------------
+
 
 
 // class to create splash main window and initialize electron

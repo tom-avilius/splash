@@ -19,7 +19,6 @@
     "electron": "^23.2.1"
   },
   "dependencies": {
-    "electron-bottom-window": "^1.0.3",
     "electron-squirrel-startup": "^1.0.0"
   }
 }
