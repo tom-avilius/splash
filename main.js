@@ -46,3 +46,4 @@ mainWindow.loadHtmlFile(indexHtmlFilePath);
 // enabling shortcuts for the main window
 mainWindow.enableShortcuts();
 
+

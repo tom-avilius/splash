@@ -73,7 +73,7 @@ class SplashMainWindow {
             this.appReady = true;
 
             // creating main window
-            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false, closable: false, minimizable: false});
+            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false, closable: false, minimizable: false,});
             try {
                 if(toolset.config.openDevTools === true) {
 
@@ -88,7 +88,9 @@ class SplashMainWindow {
 
                 console.log('Error reading openDevTools property..')
             }
-            console.log('Main window created..')
+            console.log('Main window created..');
+
+            
 
             // Stick window to bottom
             if (toolset.platform != 'linux') {
@@ -152,6 +154,13 @@ class SplashMainWindow {
                         }
                     },
                 },
+
+                {
+                    role: 'edit',
+                    label: 'edit',
+                    accelerator: process.platform === 'darwin' ? 'Cmd+E' : 'Ctrl+E',
+                    click: () => this.editMode(),
+                } 
             ]
             }))
 
@@ -171,7 +180,6 @@ class SplashMainWindow {
         }
         
     }
-
 
     // function to load html file
     loadHtmlFile(filePath, mainWindow) {
