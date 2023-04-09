@@ -73,7 +73,7 @@ class SplashMainWindow {
             this.appReady = true;
 
             // creating main window
-            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false,});
+            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false, closable: false, minimizable: false});
             try {
                 if(toolset.config.openDevTools === true) {
 
