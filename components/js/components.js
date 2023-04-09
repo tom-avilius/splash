@@ -91,7 +91,10 @@ class SplashMainWindow {
             console.log('Main window created..')
 
             // Stick window to bottom
-            stickToBottom(mainWindow);
+            if (toolset.platform != 'linux') {
+
+                stickToBottom(mainWindow);
+            }
 
             // executing all the functions that were called before electron initialization
             for(var i=0; i<this.execList.length; i++) {
