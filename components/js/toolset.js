@@ -16,12 +16,14 @@ class Toolset {
 
         this.htmlFilePath = htmlFilePath;
         this.username = os.userInfo().username;
-        this.config = this.importConfig();
         this.platform = os.platform()+'';
+        this.config = this.importConfig();
     }
 
 
     importConfig() {
+
+        console.log(this.platform);
 
         try {
             if(this.platform == 'linux'){

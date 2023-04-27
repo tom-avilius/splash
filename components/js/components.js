@@ -7,17 +7,21 @@ const { app, BrowserWindow, Menu, MenuItem} = require('electron');
 // importing the path module
 const path = require('path');
 
-// importing the stick to bottom package to make splash
-// window bottom-most
-const { stickToBottom } = require('electron-bottom-window');
-
 // importing toolset
 const {Toolset} = require(path.join(__dirname, "toolset"));
 
-// ------------END OF IMPORTS------------------
-
 // creating toolset object
 const toolset = new Toolset(path.resolve('./components/html/index.html'));
+
+// importing the stick to bottom package to make splash
+// window bottom-most only needed in windows
+if (toolset.platform != "linux") {
+    
+    const { stickToBottom } = require('electron-bottom-window');
+}
+
+// ------------END OF IMPORTS------------------
+
 
 
 // class to create splash main window and initialize electron
@@ -69,7 +73,7 @@ class SplashMainWindow {
             this.appReady = true;
 
             // creating main window
-            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false,});
+            const mainWindow = new BrowserWindow({...this.mainWindowConfig, height: screen.getPrimaryDisplay().workAreaSize.height-5, width: screen.getPrimaryDisplay().workAreaSize.width, resizable: false, closable: false, minimizable: false,});
             try {
                 if(toolset.config.openDevTools === true) {
 
@@ -84,10 +88,15 @@ class SplashMainWindow {
 
                 console.log('Error reading openDevTools property..')
             }
-            console.log('Main window created..')
+            console.log('Main window created..');
+
+            
 
             // Stick window to bottom
-            stickToBottom(mainWindow);
+            if (toolset.platform != 'linux') {
+
+                stickToBottom(mainWindow);
+            }
 
             // executing all the functions that were called before electron initialization
             for(var i=0; i<this.execList.length; i++) {
@@ -145,6 +154,13 @@ class SplashMainWindow {
                         }
                     },
                 },
+
+                {
+                    role: 'edit',
+                    label: 'edit',
+                    accelerator: process.platform === 'darwin' ? 'Cmd+E' : 'Ctrl+E',
+                    click: () => this.editMode(),
+                } 
             ]
             }))
 
@@ -164,7 +180,6 @@ class SplashMainWindow {
         }
         
     }
-
 
     // function to load html file
     loadHtmlFile(filePath, mainWindow) {
