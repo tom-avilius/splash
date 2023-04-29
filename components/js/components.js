@@ -15,10 +15,7 @@ const toolset = new Toolset(path.resolve('./components/html/index.html'));
 
 // importing the stick to bottom package to make splash
 // window bottom-most only needed in windows
-if (toolset.platform != "linux") {
-    
-    const { stickToBottom } = require('electron-bottom-window');
-}
+const { stickToBottom } = require('electron-bottom-window');
 
 // ------------END OF IMPORTS------------------
 
@@ -93,10 +90,10 @@ class SplashMainWindow {
             
 
             // Stick window to bottom
-            if (toolset.platform != 'linux') {
+            // if (toolset.platform != 'linux') {   
 
                 stickToBottom(mainWindow);
-            }
+            // }
 
             // executing all the functions that were called before electron initialization
             for(var i=0; i<this.execList.length; i++) {
