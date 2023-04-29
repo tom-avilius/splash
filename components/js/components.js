@@ -130,10 +130,13 @@ class SplashMainWindow {
                 },
 
                 {
-                    role: 'quit',
+                    role: 'qu.it', //quit
                     label: 'close',
-                    accelerator: process.platform === 'darwin' ? 'Cmd+Q' : 'Ctrl+Q',
-                    click: () => console.log('Quit'),
+                    accelerator: 'Ctrl+Q',
+                    click: () => {
+                        console.log('Quit');
+                        app.exit();
+                    }
                 },
                 
                 {
@@ -151,13 +154,6 @@ class SplashMainWindow {
                         }
                     },
                 },
-
-                {
-                    role: 'edit',
-                    label: 'edit',
-                    accelerator: process.platform === 'darwin' ? 'Cmd+E' : 'Ctrl+E',
-                    click: () => this.editMode(),
-                } 
             ]
             }))
 
