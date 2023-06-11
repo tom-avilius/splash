@@ -104,6 +104,9 @@ class SplashMainWindow {
                     func(mainWindow);
                 }
             }
+
+            // sometimes the window icon appears on taskbar when it loads slowly..
+            mainWindow.setSkipTaskbar(true);
         });
     }
 
