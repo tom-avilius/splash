@@ -13,7 +13,7 @@ Since there is only a single version attributed to the project, it and its prede
 
 Please report any suspected security vulnerabilies to 
 **[tomavilius@tomavilius.in](mailto:tomavilius@tomavilius.in)**.
-You can expect a response from us within 24hrs of the report. If 
+You can expect a response from me within 24hrs of the report. If 
 this issue is confirmed, a path will be released probably within the week
 depending on the complexity. Any updates regarding the issue will be conveyed 
 to you via mail and github both.
