@@ -16,7 +16,12 @@ const {Toolset} = require(path.join(__dirname, "components/js/toolset"));
 
 // all global variables are mentioned below
 
-var indexHtmlFilePath = path.resolve('./components/html/index.html').replaceAll('\\', '/');
+// var indexHtmlFilePath = path.resolve(__dirname + '/components/html/index.html').replaceAll('\\', '/');
+// var indexHtmlFilePath = __dirname.replaceAll('\\', '/');
+
+
+
+var indexHtmlFilePath = '';
 
 // creating splashToolset object
 const splashToolset = new Toolset(indexHtmlFilePath);
@@ -35,6 +40,7 @@ mainWindow.mainWindowConfig = {...mainWindow.mainWindowConfig, transparent: true
 mainWindow.mainWindowConfig = {...mainWindow.mainWindowConfig, webPreferences: {
     preload: path.join(__dirname, "components/preloads/mainPreload.js"),
     sandbox: false,
+    webSecurity: false,
 }}
 
 // starting the application

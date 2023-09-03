@@ -2,10 +2,11 @@
 
 ## v2.0.0 ==Cat's Note Update==
 
+- Added a *start menu* entry.
 - **Removed:** Separate package.json files as they are redundant. 
 - **Fixed:** html path in some cases would be wrong in the html file.
 - *Squirrel-maker* is the default electron package maker now.
-- Add a *production mode* log to the console.
+- Added a *production mode* log to the console.
 
 
 ## v1.0.0 ==CodeXtential==
