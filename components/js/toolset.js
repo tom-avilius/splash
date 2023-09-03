@@ -14,7 +14,7 @@ class Toolset {
 
     constructor(htmlFilePath) {
 
-        this.htmlFilePath = htmlFilePath;
+        this.htmlFilePath = htmlFilePath.replaceAll('\\', '/');
         this.username = os.userInfo().username;
         this.platform = os.platform()+'';
         this.config = this.importConfig();
