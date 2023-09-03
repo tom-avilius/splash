@@ -1,10 +1,14 @@
 module.exports = {
-  packagerConfig: {},
+  packagerConfig: {
+    "outputDirectory": "C:/Program\ Files/"
+  },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        "outputDirectory": "C:Users\ Files/"
+      },
     },
     {
       name: '@electron-forge/maker-zip',
