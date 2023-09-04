@@ -1,7 +1,7 @@
 // all imports are mentioned below
 
 // importing electron modules
-const { app, BrowserWindow, Menu, MenuItem, Tray } = require("electron");
+const { app, BrowserWindow, Menu, MenuItem, Tray, dialog } = require("electron");
 
 // importing the path module
 const path = require("path");
@@ -67,16 +67,11 @@ class SplashMainWindow {
       // Adding splash to system tray
       const tray = new Tray(__dirname + '/favicon.png');
       // console.log(trayIcon.isEmpty())
-      // setting the context menu for the tray
-      const contextMenu = Menu.buildFromTemplate([
-
-        { label: 'Item1', type: 'radio' },
-        { label: "Item2", type: 'radio'}
-      ]);
-      tray.setContextMenu(contextMenu);
 
       tray.setToolTip('Splash');
       tray.setTitle('Splash Settings')
+      tray.focus();
+      tray.displayBalloon({ title: "Splash", content: "You can access settings from system tray, next to battery, audio icons." });
 
       // creating main window
       const mainWindow = new BrowserWindow({
@@ -87,6 +82,64 @@ class SplashMainWindow {
         closable: false,
         minimizable: false,
       });
+
+
+      // setting the context menu for the tray
+      const contextMenu = Menu.buildFromTemplate([
+
+        {
+          role: 'refresh',
+          label: 'Refresh',
+          click: () => {
+
+            mainWindow.loadFile(toolset.importConfig().htmlFile);
+            console.log('refresh');
+          }
+        },
+
+        {
+          label: 'Load File',
+          click: () => {
+
+            dialog.showOpenDialog({ properties: ['openFile'], title: 'Select html file to Render', filters: [{name: 'html files', extensions: ['html'] }] }).then((val) => {
+              
+              if (!val.canceled) {
+                
+                toolset.changeHtmlPath(val.filePaths);
+                mainWindow.loadFile(toolset.importConfig().htmlFile);
+              }
+            })
+          }
+        },
+
+        {
+          role: "openDevTools",
+          label: "Toggle Dev Tools",
+          click: () => {
+            console.log("Open dev tools");
+            if (toolset.config.openDevTools === false) {
+              toolset.config.openDevTools = true;
+              mainWindow.webContents.openDevTools();
+            } else {
+              toolset.config.openDevTools = false;
+              mainWindow.webContents.closeDevTools();
+            }
+          },
+        },
+
+        {
+          label: "Close",
+          role: 'close',
+          click: () => {
+
+            console.log("Quit Splash.. ");
+            app.exit();
+          }
+        },
+      ]);
+      tray.setContextMenu(contextMenu);
+
+
       try {
         if (toolset.config.openDevTools === true) {
           try {
@@ -144,7 +197,7 @@ class SplashMainWindow {
             },
 
             {
-              role: "qu.it", //quit
+              role: "qu.it", // ! quit: cannot write quit.. LOL 
               label: "close",
               accelerator: "Ctrl+Q",
               click: () => {

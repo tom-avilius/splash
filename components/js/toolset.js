@@ -63,7 +63,15 @@ class Toolset {
             } catch (Err) {
                 console.trace(Err);
             }
-         }
+        }
+    }
+
+    changeHtmlPath (newHtmlPath) {
+
+        var latestConfig = this.importConfig();
+        latestConfig.htmlFile = (newHtmlPath + '').replaceAll('\\', '/');
+        latestConfig = JSON.stringify(latestConfig)
+        fs.writeFileSync('C:/Users/' + this.username + '/Documents/splash/config.json', latestConfig)
     }
 }
 
