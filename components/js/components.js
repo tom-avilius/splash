@@ -1,7 +1,7 @@
 // all imports are mentioned below
 
 // importing electron modules
-const { app, BrowserWindow, Menu, MenuItem } = require("electron");
+const { app, BrowserWindow, Menu, MenuItem, Tray } = require("electron");
 
 // importing the path module
 const path = require("path");
@@ -63,6 +63,20 @@ class SplashMainWindow {
       const { screen } = require("electron");
       console.log("Electron initialization finished..");
       this.appReady = true;
+
+      // Adding splash to system tray
+      const tray = new Tray(__dirname + '/favicon.png');
+      // console.log(trayIcon.isEmpty())
+      // setting the context menu for the tray
+      const contextMenu = Menu.buildFromTemplate([
+
+        { label: 'Item1', type: 'radio' },
+        { label: "Item2", type: 'radio'}
+      ]);
+      tray.setContextMenu(contextMenu);
+
+      tray.setToolTip('Splash');
+      tray.setTitle('Splash Settings')
 
       // creating main window
       const mainWindow = new BrowserWindow({
