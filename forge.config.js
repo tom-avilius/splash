@@ -1,13 +1,16 @@
 module.exports = {
   packagerConfig: {
-    "outputDirectory": "C:/Program\ Files/"
+    "outputDirectory": "C:/Program\ Files/",
+    "icon": "./favicon"
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        "outputDirectory": "C:Users\ Files/"
+        "outputDirectory": "C:Users\ Files/",
+        "name": "splash",
+        "setupIcon": "./favicon.ico"
       },
     },
     {
