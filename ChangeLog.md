@@ -2,6 +2,8 @@
 
 ## v2.0.0 ==Cat's Note Update==
 
+- **Added:** splash now shows up in the system tray.
+- **Added:** support for loading new html files without interaction with config.json.
 - **Added:** an icon.
 - **Added:** a *start menu* entry.
 - **Removed:** Separate package.json files as they are redundant. 
