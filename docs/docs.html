@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,9 @@
 <body id="doc-body">
 
     <header class="header" id="doc-header">
-        <a href="./index.html"><h1>splash</h1></a>
+        <a href="./index.html">
+            <h1>splash</h1>
+        </a>
         <nav class="navbar">
             <ul>
                 <li class="nav-item"><a href="./docs.html">Docs</a></li>
@@ -24,7 +27,8 @@
             </ul>
         </nav>
         <div>
-            <a href="https://github.com/tom-avilius/splash/releases/download/v1.0.0/splash-win32-x64.zip" target="_blank"><button>Download</button></a>
+            <a href="https://github.com/tom-avilius/splash/releases/download/v2.0.0/splash-2.0.0.Setup.exe"
+                target="_blank"><button>Download</button></a>
             <button id="dropdown-arrow" class="hidden">&#9776;</button>
             <div class="break"></div>
             <nav class="navbar-additional hidden">
@@ -38,8 +42,8 @@
         </div>
     </header>
 
-   <div class="container-doc">
-        
+    <div class="container-doc">
+
         <div class="vertical-nav">
             <p>User Docs</p>
             <br>
@@ -61,44 +65,52 @@
                 <li class="vnav-item" id="vnav5"><a href="#hello-world">Hello World</a></li>
                 <li class="vnav-item" id="vnav6"><a href="#functions">Available Functions</a></li>
             </ul>
-            
+
 
         </div>
 
         <div class="content" id="installation">
 
             <h1>
-                Documentation 
+                Documentation
             </h1>
 
             <div>
 
                 <br>
 
-            
+
                 <span id="theme"></span>
 
 
                 <h2>Installation Instructions</h2>
-                
-                    <ul>
-                        <li>
-                            Click on this <a href="https://github.com/tom-avilius/splash/releases/download/v1.0.0/splash-win32-x64.zip" target="_blank">link</a> to download splash for windows.
-                        </li>
-                        <li>
-                            Now extract the archive. The folder you extract the archive to is important as you cannot change it later without interfering with the installation.
-                            Open the extracted folder and click on splash.exe. Wait for it to be installed. 
-                        </li>
-                        <li>
-                            Splash installation is complete. To install themes checkout this <a href="./themes.html" target="_blank">link</a>.
-                        </li>
-                        <li>
-                            Take note of important shortcuts. Ctrl+Q to quit, Ctrl+R to refresh and Ctrl+D to open dev tools.
-                        </li>
-                        <li>
-                            <strong>Encountered an error?</strong> Report an <a href="https://github.com/tom-avilius/splash/issues" target="_blank">issue</a> on gitub or use the <a href="https://forms.gle/Jp5ZoUipEKyPB5Ya6" target="_blank">contact me</a> form. I will revert back as soon as possible.
-                        </li>
-                    </ul>
+
+                <ul>
+                    <li>
+                        Click on this <a
+                            href="https://github.com/tom-avilius/splash/releases/download/v2.0.0/splash-2.0.0.Setup.exe"
+                            target="_blank">link</a> to download splash for windows.
+                    </li>
+                    <li>
+                        Now extract the archive. The folder you extract the archive to is important as you cannot change
+                        it later without interfering with the installation.
+                        Open the extracted folder and click on splash.exe. Wait for it to be installed.
+                    </li>
+                    <li>
+                        Splash installation is complete. To install themes checkout this <a href="./themes.html"
+                            target="_blank">link</a>.
+                    </li>
+                    <li>
+                        Take note of important shortcuts. Ctrl+Q to quit, Ctrl+R to refresh and Ctrl+D to open dev
+                        tools.
+                    </li>
+                    <li>
+                        <strong>Encountered an error?</strong> Report an <a
+                            href="https://github.com/tom-avilius/splash/issues" target="_blank">issue</a> on gitub or
+                        use the <a href="https://forms.gle/Jp5ZoUipEKyPB5Ya6" target="_blank">contact me</a> form. I
+                        will revert back as soon as possible.
+                    </li>
+                </ul>
             </div>
 
             <br>
@@ -109,22 +121,34 @@
 
                 <ul>
                     <li>
-                        Download a desired theme from the <a href="./themes.html">themes section</a>  of the splash website.
+                        Download a desired theme from the <a href="./themes.html">themes section</a> of the splash
+                        website.
                     </li>
                     <li>
                         Unarchive the theme, if it is archived.
                     </li>
                     <li>
-                        Move the theme folder (generally with the same name as that of the theme) into any directory or location where it would be safe and not be deleted. I recommend you to move it inside the documents folder.
+                        Move the theme folder (generally with the same name as that of the theme) into any directory or
+                        location where it would be safe and not be deleted. I recommend you to move it inside the
+                        documents folder.
                     </li>
                     <li>
-                        Open the theme folder you moved and find a file with the same name as that of the theme itself and ends with '.html' extension. Example: <span>themeName.html</span>. Right click on the file and copy the (absolute) path of the file.
+                        Open the theme folder you moved and find a file with the same name as that of the theme itself
+                        and ends with '.html' extension. Example: <span>themeName.html</span>. Right click on the file
+                        and copy the (absolute) path of the file.
                     </li>
                     <li>
-                        Head to the documents folder of your PC and find a folder named 'splash'. Open the folder. Inside the folder you will find a 'config.json' file. Open the file in a text editor (notepad) and change the text following the 'path:' key. <strong>If the path consists of back slashes change all of them to forward slashes.</strong> Do not change anything else. Do not remove any inverted quotes.
+                        Head to the documents folder of your PC and find a folder named 'splash'. Open the folder.
+                        Inside the folder you will find a 'config.json' file. Open the file in a text editor (notepad)
+                        and change the text following the 'path:' key. <strong>If the path consists of back slashes
+                            change all of them to forward slashes.</strong> Do not change anything else. Do not remove
+                        any inverted quotes.
                     </li>
                     <li>
-                        If you encountered any problem during any procedure, please reach out to me using the <a href="https://forms.gle/Jp5ZoUipEKyPB5Ya6" target="_blank">contact me </a> form or by opening an <a href="https://github.com/tom-avilius/splash/issues" target="_blank">issue</a> on github.
+                        If you encountered any problem during any procedure, please reach out to me using the <a
+                            href="https://forms.gle/Jp5ZoUipEKyPB5Ya6" target="_blank">contact me </a> form or by
+                        opening an <a href="https://github.com/tom-avilius/splash/issues" target="_blank">issue</a> on
+                        github.
                     </li>
                 </ul>
 
@@ -134,7 +158,7 @@
             <br>
             <br>
             <br>
-            
+
             <h1 id="intro">Developer Documentation</h1>
 
             <br>
@@ -143,92 +167,103 @@
 
                 <h2>Getting Ready</h2>
 
-                <p>This section of the Documentation will guide you through the journey of creating stunning and productive desktop screens for the splash application.</p>
+                <p>This section of the Documentation will guide you through the journey of creating stunning and
+                    productive desktop screens for the splash application.</p>
 
-               <h3>Prerequisites: </h3>
+                <h3>Prerequisites: </h3>
 
-               <ul>
-                <li>
-                    Atleast Beginner level html, css and javascript knowledge.
-                </li>
-                <li>
-                    Splash application is installed and you have read through the basic user documentation above.
-                </li>
-               </ul>
+                <ul>
+                    <li>
+                        Atleast Beginner level html, css and javascript knowledge.
+                    </li>
+                    <li>
+                        Splash application is installed and you have read through the basic user documentation above.
+                    </li>
+                </ul>
 
-               <br>
+                <br>
 
-               <p>
-                It is important to understand how the splash application works in order to be comfortable developing with it. <br>
-                Splash renders a frameless, non-movable and non-resizable window. The width of the window is equal to the width of the available screen and the height is equal to the total height minus 5 pixels. It cannot be made fullscreen by the user by using the F11 key
-                will always be at the bottom of the z-index of the desktop. The window is capable of rendering html, css and javascript 
-                just as a browser can; complete with the chrome dev tools.
-               </p>
+                <p>
+                    It is important to understand how the splash application works in order to be comfortable developing
+                    with it. <br>
+                    Splash renders a frameless, non-movable and non-resizable window. The width of the window is equal
+                    to the width of the available screen and the height is equal to the total height minus 5 pixels. It
+                    cannot be made fullscreen by the user by using the F11 key
+                    will always be at the bottom of the z-index of the desktop. The window is capable of rendering html,
+                    css and javascript
+                    just as a browser can; complete with the chrome dev tools.
+                </p>
 
-               <h3>Important Shortcuts</h3>
+                <h3>Important Shortcuts</h3>
 
-               <table>
-                <tr>
-                    <th>Action</th>
-                    <th>Binding</th>
-                </tr>
-                <tr>
-                    <td>Refresh</td>
-                    <td>Ctrl+R</td>
-                </tr>
-                <tr>
-                    <td>Open Dev Tools</td>
-                    <td>Ctrl+D</td>
-                </tr>
-                <tr>
-                    <td>Quit</td>
-                    <td>Ctrl+Q</td>
-                </tr>
-               </table>
+                <table>
+                    <tr>
+                        <th>Action</th>
+                        <th>Binding</th>
+                    </tr>
+                    <tr>
+                        <td>Refresh</td>
+                        <td>Ctrl+R</td>
+                    </tr>
+                    <tr>
+                        <td>Open Dev Tools</td>
+                        <td>Ctrl+D</td>
+                    </tr>
+                    <tr>
+                        <td>Quit</td>
+                        <td>Ctrl+Q</td>
+                    </tr>
+                </table>
 
-               <span class="note">For these shortcuts to work, splash window must be in focus.</span>
+                <span class="note">For these shortcuts to work, splash window must be in focus.</span>
 
-               <br id="file-struct">
-               <br>
-               <br>
+                <br id="file-struct">
+                <br>
+                <br>
 
-               <h3>config.json File</h3>
-               <p>This file can be found in the documents under the splash folder of the PC. it contains the following data: </p>
-               <table>
-                <tr>
-                    <th>Key</th>
-                    <th>Value</th>
-                </tr>
-                <tr>
-                    <td>htmlFile</td>
-                    <td>The location of the html file to be rendered in the splash window. (main theme file)</td>
-                </tr>
-                <tr>
-                    <td>openDevTools</td>
-                    <td>To open devTools by default on window load.</td>
-                </tr>
-               </table>
+                <h3>config.json File</h3>
+                <p>This file can be found in the documents under the splash folder of the PC. it contains the following
+                    data: </p>
+                <table>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>htmlFile</td>
+                        <td>The location of the html file to be rendered in the splash window. (main theme file)</td>
+                    </tr>
+                    <tr>
+                        <td>openDevTools</td>
+                        <td>To open devTools by default on window load.</td>
+                    </tr>
+                </table>
 
-               <span class="note">While editing the file it is important not to change the formatting. Any quotations and symbols should not be changed.</span>
-               <br> <br>
-               <span class="note"> Anything within the double quotes can be changed. For openDevTools only possible values are true and false without double quotes.</span>
+                <span class="note">While editing the file it is important not to change the formatting. Any quotations
+                    and symbols should not be changed.</span>
+                <br> <br>
+                <span class="note"> Anything within the double quotes can be changed. For openDevTools only possible
+                    values are true and false without double quotes.</span>
             </div>
 
             <br>
             <br>
             <br>
-            
+
             <div>
 
                 <h2 id="hello-world">File Structure</h2>
                 <p>
-                    Whenever splash application is installed a folder by the name of splash is created under the documents directory of the PC.
-                    Inside the splash folder you will find config.json file. This file is very important to splash as it contains the location of
+                    Whenever splash application is installed a folder by the name of splash is created under the
+                    documents directory of the PC.
+                    Inside the splash folder you will find config.json file. This file is very important to splash as it
+                    contains the location of
                     of the html file to render at the splash window.
                 </p>
 
                 <p>
-                    While creating or adding themes, I recommend that you store the theme folder inside the splash folder where they cannot be disturbed.
+                    While creating or adding themes, I recommend that you store the theme folder inside the splash
+                    folder where they cannot be disturbed.
                     Always remember to change the htmlFile key's value in the config.json file when adding a new theme.
                 </p>
 
@@ -243,26 +278,27 @@
 
                 <ul>
                     <li>
-                        Create a new folder with whatever name you want to associate your theme with. <span class="note">Example: helloWorld </span>
+                        Create a new folder with whatever name you want to associate your theme with. <span
+                            class="note">Example: helloWorld </span>
                     </li>
                     <li>
-                        Head inside the folder and create the following files: <br> 
-                       <ul>
+                        Head inside the folder and create the following files: <br>
+                        <ul>
                             <li>
-                                <span class="note">index.html </span> <br> 
+                                <span class="note">index.html </span> <br>
                             </li>
                             <li>
-                                <span class="note">index.js </span>  <br>
+                                <span class="note">index.js </span> <br>
                             </li>
                             <li>
                                 <span class="note">index.css </span>
                             </li>
-                       </ul>
+                        </ul>
                     </li>
                     <li>
                         Open the index.html file inside a text editor and add the following code: <br>
                         <div class="code">
-<code>
+                            <code>
 <pre>
 &lt;!DOCTYPE html&gt;                                         <!--<button class="copy-btn" id="index-html-copy">copy</button>-->
 &lt;html&gt; 
@@ -288,10 +324,11 @@
 
                     <li>
                         <br>
-                        Save the index.html file and open the index.css file inside a text editor and add the following styles:
+                        Save the index.html file and open the index.css file inside a text editor and add the following
+                        styles:
 
                         <div class="code">
-<code>
+                            <code>
 <pre>
 div {                                                      <!--<button class="copy-btn" id="index-css-copy">copy</button>-->
 
@@ -314,11 +351,12 @@ h1 {
 
                     <li>
                         <br>
-                        Save the index.css file and open the index.js file inside a text editor and add the following code:
+                        Save the index.css file and open the index.js file inside a text editor and add the following
+                        code:
 
                         <div class="code">
 
-<code>
+                            <code>
 <pre>
 window.alert('Success Creating my own Theme!!');           <!--<button class="copy-btn" id="index-js-copy">copy</button>-->
 </pre>
@@ -329,21 +367,26 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
 
                     <li>
                         <br>
-                        Save the index.css file. Copy the absolute path of the index.html file and paste it inside the double quotes of the htmlFile key of the config.json file. 
+                        Save the index.css file. Copy the absolute path of the index.html file and paste it inside the
+                        double quotes of the htmlFile key of the config.json file.
                     </li>
                 </ul>
 
                 <p>
                     <br>
-                    From the above example it must be clear to you that the html, css and javascript needed to create your own theme in splash is the same as
-                    the standard html needed for websites. I encourage you to look at the winter's kiss' code as an example to create your own theme.
+                    From the above example it must be clear to you that the html, css and javascript needed to create
+                    your own theme in splash is the same as
+                    the standard html needed for websites. I encourage you to look at the winter's kiss' code as an
+                    example to create your own theme.
                 </p>
             </div>
 
             <div>
                 <h2 id="functions">Available Functions</h2>
-                <p>To aid in the development process splash offers certain functions that will allow you to perform certain tasks that are otherwise
-                    tedious, inherent or very common towards the development of themes. A list of the objects that provide these functions: <br>
+                <p>To aid in the development process splash offers certain functions that will allow you to perform
+                    certain tasks that are otherwise
+                    tedious, inherent or very common towards the development of themes. A list of the objects that
+                    provide these functions: <br>
                 </p>
 
                 <table>
@@ -357,7 +400,8 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                             terminal
                         </td>
                         <td>
-                            Provides a way to communicate with the terminal of the operating system via the terminal.execute('command') method.
+                            Provides a way to communicate with the terminal of the operating system via the
+                            terminal.execute('command') method.
                         </td>
                     </tr>
 
@@ -392,7 +436,8 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                 <br>
 
                 <h3>terminal.execute</h3>
-                <p>This method allows you to execute commands in the terminal or command line of the operating system. This can be used to create
+                <p>This method allows you to execute commands in the terminal or command line of the operating system.
+                    This can be used to create
                     docks and for almost anything. <br>
                     <code>Syntax: terminal.execute('command');</code>
                 </p>
@@ -401,7 +446,7 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                 <p>This method allows you to obtain data regarding the cpu utilization. <br>
                     <code>Syntax: os.cpu( (usage) => {console.log(usage*100)} );</code> <br>
                     The parameter usage is passed along with the callback function that stores
-                    the percentage of cpu that is being utilized by all the processes. As usage is 
+                    the percentage of cpu that is being utilized by all the processes. As usage is
                     in percentage multiply it by 100 to get the numerical value.
                 </p>
 
@@ -417,7 +462,7 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                 </p>
 
                 <h3>disk.get</h3>
-                <p>This method will retrive the data that is associated with the specified key. 
+                <p>This method will retrive the data that is associated with the specified key.
                     <br>
                     <code>Syntax: var value = disk.get('key');</code>
                 </p>
@@ -448,7 +493,7 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
             </div>
         </div>
 
-   </div>
+    </div>
 
 </body>
 
