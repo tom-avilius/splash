@@ -1,6 +1,6 @@
 {
   "name": "splash",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Customize your desktop to your liking using html, css and javascript!",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "aaarshd",
+  "author": "tom avilius",
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
