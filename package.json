@@ -1,6 +1,6 @@
 {
   "name": "splash",
-  "version": "0.0.2",
+  "version": "2.0.0",
   "description": "Customize your desktop to your liking using html, css and javascript!",
   "main": "main.js",
   "scripts": {
