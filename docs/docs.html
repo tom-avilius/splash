@@ -222,9 +222,10 @@
                 <br>
 
                 <h3>config.json File</h3>
-                <p>This file can be found in the documents under the splash folder of the PC. it contains the following
-                    data: </p>
-                <table>
+                <p>This file can be found in the documents under the splash folder of the PC. It contains the path of
+                    the
+                    html file to be rendered, and should not be disturbed. </p>
+                <!-- <table>
                     <tr>
                         <th>Key</th>
                         <th>Value</th>
@@ -243,10 +244,10 @@
                     and symbols should not be changed.</span>
                 <br> <br>
                 <span class="note"> Anything within the double quotes can be changed. For openDevTools only possible
-                    values are true and false without double quotes.</span>
+                    values are true and false without double quotes.</span> -->
             </div>
 
-            <br>
+            <!-- <br> -->
             <br>
             <br>
 
@@ -256,15 +257,16 @@
                 <p>
                     Whenever splash application is installed a folder by the name of splash is created under the
                     documents directory of the PC.
-                    Inside the splash folder you will find config.json file. This file is very important to splash as it
-                    contains the location of
-                    of the html file to render at the splash window.
+                    Splash icon is available at the system tray where you have options to load html file, refresh the
+                    window, and
+                    toggle dev tools.
                 </p>
 
                 <p>
                     While creating or adding themes, I recommend that you store the theme folder inside the splash
                     folder where they cannot be disturbed.
-                    Always remember to change the htmlFile key's value in the config.json file when adding a new theme.
+                    Always remember to refresh the splash window when updating any theme in development either by
+                    hitting Ctrl+r or using the system tray refresh option.
                 </p>
 
             </div>
@@ -369,8 +371,9 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
 
                     <li>
                         <br>
-                        Save the index.css file. Copy the absolute path of the index.html file and paste it inside the
-                        double quotes of the htmlFile key of the config.json file.
+                        Save the index.css file. Now go to your desktop home-screen and click once on the wallpaper and
+                        hit Ctrl+r or
+                        use the system tray refresh option under the splash icon.
                     </li>
                 </ul>
 
@@ -378,7 +381,8 @@ window.alert('Success Creating my own Theme!!');           <!--<button class="co
                     <br>
                     From the above example it must be clear to you that the html, css and javascript needed to create
                     your own theme in splash is the same as
-                    the standard html needed for websites. I encourage you to look at the winter's kiss' code as an
+                    the standard html needed for websites. I encourage you to look at the <a
+                        href="https://wintersKiss.tomavilius.in" target="_blank">winter's kiss'</a> code as an
                     example to create your own theme.
                 </p>
             </div>
