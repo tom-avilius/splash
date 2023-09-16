@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    
+
     background-color: #50577A;
 }
 
@@ -93,7 +93,8 @@ br {
     padding: 20px 0 10px;
 }
 
-.container-doc .content div ul, .container-doc .content div p {
+.container-doc .content div ul,
+.container-doc .content div p {
 
     font-family: 'Inter', sans-serif;
     list-style-type: none;
@@ -128,7 +129,7 @@ br {
 }
 
 .content h2 a {
-    
+
     /* text-decoration: none; */
     color: black;
 }
@@ -249,7 +250,7 @@ br {
 }
 
 .download-btn {
-    
+
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     padding: 7px 14px;
@@ -261,7 +262,7 @@ br {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     user-select: none;
     cursor: pointer;
-    transition: all ease 0.4s; 
+    transition: all ease 0.4s;
     margin-bottom: 1%;
 
     transition: all ease 0.4s;
@@ -290,8 +291,8 @@ br {
 }
 
 footer {
-    
-    
+
+
     background-color: #344D67;
     padding: 1.5% 7%;
 }
@@ -342,7 +343,7 @@ footer a:hover {
     letter-spacing: 0.1cm;
     font-weight: 500;
     font-size: 2.3rem;
-    color:white;
+    color: white;
     cursor: pointer;
 
     transition: all ease 0.4s;
@@ -365,7 +366,7 @@ footer a:hover {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     user-select: none;
     cursor: pointer;
-    transition: all ease 0.4s; 
+    transition: all ease 0.4s;
     color: white;
 }
 
@@ -395,7 +396,7 @@ footer a:hover {
     background-color: white;
     color: white;
 
-    box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 }
 
 .img-text {
@@ -422,10 +423,10 @@ nav {
 
 .navbar-additional {
 
-    margin-top:  15px;
+    margin-top: 15px;
 }
 
-.navbar-additional  ul li{
+.navbar-additional ul li {
 
     display: block;
     margin-bottom: 5px;
@@ -453,7 +454,7 @@ nav {
     border-radius: 1.5rem;
     padding: 0.5rem;
 
-    box-shadow:  0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe ,0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; 
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
 }
 
 .note {
@@ -484,7 +485,8 @@ nav {
     user-select: none;
 }
 
-.secondary-navbar a, .secondary-navbar button {
+.secondary-navbar a,
+.secondary-navbar button {
 
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -497,7 +499,7 @@ nav {
 }
 
 .secondary-navbar a:hover {
- 
+
     opacity: 85%;
 }
 
@@ -514,7 +516,7 @@ nav {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     user-select: none;
     cursor: pointer;
-    transition: all ease 0.4s; 
+    transition: all ease 0.4s;
     color: white;
 }
 
@@ -531,16 +533,19 @@ nav {
 }
 
 .showcase-blur {
-    
+
     filter: blur(2px);
 }
 
-table, th, td{
+table,
+th,
+td {
 
     padding: 5px;
 }
 
-th, td {
+th,
+td {
 
     padding-right: 50px;
 }
@@ -614,8 +619,8 @@ th {
 }
 
 
-@media screen and (max-width: 1300px){
-    
+@media screen and (max-width: 1300px) {
+
     .showcase {
 
         width: 75vw;
@@ -647,7 +652,7 @@ th {
 
         position: relative;
     }
-    
+
     .navbar {
 
         display: none;
@@ -666,11 +671,12 @@ th {
         padding-right: 0;
     }
 
-    .container-doc .content div, .container-doc .content h1 {
+    .container-doc .content div,
+    .container-doc .content h1 {
 
         padding-left: 1px;
     }
- 
+
     .content-i {
 
         padding-bottom: 10px;
