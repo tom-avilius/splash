@@ -525,17 +525,46 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(40, 50, 79) 0px 0px 0px 1px;
 }
 
-.showcase {
+.showcase-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.showcase-container a {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.showcase-img {
+
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.showcase-text {
+
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    font-size: 2.5rem;
+    opacity: 0;
+}
+
+/* .showcase {
 
     width: 50vw;
     margin: 6%;
     transition: all ease 0.4s;
-}
+} */
 
-.showcase-blur {
+/* .showcase-blur {
 
     filter: blur(2px);
-}
+} */
 
 table,
 th,

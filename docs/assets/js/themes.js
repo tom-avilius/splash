@@ -2,8 +2,8 @@
 // all constant and variable declarations are mentioned below 
 // showcase img elements and their text
 // winter's kiss
-const wintersKiss = document.getElementById('winters-kiss');
-const wintersKissText = document.getElementById('winters-kiss-text');
+const wintersKiss = document.getElementById('01');
+const wintersKissText = document.getElementById('01-tx');
 // the dropdown button DOM element
 const dropdownButton = document.getElementById('dropdown-arrow');
 // the content DOM element where the website content is displayed
@@ -27,23 +27,20 @@ const additionalNavbar = document.getElementsByClassName('navbar-additional')[0]
 // hover listener to the winter's kiss element
 wintersKiss.addEventListener("mouseover", (event) => {
 
-    wintersKissText.classList.add('centered');
-    wintersKissText.classList.remove('hidden');
-    wintersKiss.classList.add('showcase-blur');
+    wintersKissText.style.opacity = '1';
+    wintersKiss.style.filter = "blur(2px)";
 });
 
 wintersKiss.addEventListener('mouseout', (event) => {
 
-    wintersKissText.classList.add('hidden');
-    wintersKissText.classList.remove('centered');
-    wintersKiss.classList.remove('showcase-blur');
+    wintersKissText.style.opacity = "0";
+    wintersKiss.style.filter = 'none';
 });
 
 wintersKissText.addEventListener('mouseover', (event) => {
 
-    wintersKissText.classList.add('centered');
-    wintersKissText.classList.remove('hidden');
-    wintersKiss.classList.add('showcase-blur');
+    wintersKissText.style.opacity = "1";
+    wintersKiss.style.filter = "blur(2px)";
 }); 
 
 // adding event listener to the dropdown button to
