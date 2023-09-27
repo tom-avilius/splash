@@ -4,6 +4,9 @@
 // winter's kiss
 const wintersKiss = document.getElementById('01');
 const wintersKissText = document.getElementById('01-tx');
+// pine
+const pine = document.getElementById('02');
+const pineText = document.getElementById('02-tx');
 // the dropdown button DOM element
 const dropdownButton = document.getElementById('dropdown-arrow');
 // the content DOM element where the website content is displayed
@@ -42,6 +45,26 @@ wintersKissText.addEventListener('mouseover', (event) => {
     wintersKissText.style.opacity = "1";
     wintersKiss.style.filter = "blur(2px)";
 }); 
+
+// hover listener to the winter's kiss element
+pine.addEventListener("mouseover", (event) => {
+
+    pineText.style.opacity = '1';
+    pine.style.filter = "blur(2px)";
+});
+
+pine.addEventListener('mouseout', (event) => {
+
+    pineText.style.opacity = "0";
+    pine.style.filter = 'none';
+});
+
+pineText.addEventListener('mouseover', (event) => {
+
+    pineText.style.opacity = "1";
+    pine.style.filter = "blur(2px)";
+}); 
+
 
 // adding event listener to the dropdown button to
 // enable dropdown of the navbar
