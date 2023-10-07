@@ -7,6 +7,9 @@ const wintersKissText = document.getElementById('01-tx');
 // pine
 const pine = document.getElementById('02');
 const pineText = document.getElementById('02-tx');
+// her sweet kiss
+const herSweetKiss = document.getElementById('03');
+const herSweetKissText = document.getElementById('03-tx');
 // the dropdown button DOM element
 const dropdownButton = document.getElementById('dropdown-arrow');
 // the content DOM element where the website content is displayed
@@ -46,7 +49,7 @@ wintersKissText.addEventListener('mouseover', (event) => {
     wintersKiss.style.filter = "blur(2px)";
 }); 
 
-// hover listener to the winter's kiss element
+// hover listener to the pine element
 pine.addEventListener("mouseover", (event) => {
 
     pineText.style.opacity = '1';
@@ -63,6 +66,25 @@ pineText.addEventListener('mouseover', (event) => {
 
     pineText.style.opacity = "1";
     pine.style.filter = "blur(2px)";
+}); 
+
+// hover listener to the her sweet kiss element
+herSweetKiss.addEventListener("mouseover", (event) => {
+
+    herSweetKissText.style.opacity = '1';
+    herSweetKiss.style.filter = "blur(2px)";
+});
+
+herSweetKiss.addEventListener('mouseout', (event) => {
+
+    herSweetKissText.style.opacity = "0";
+    herSweetKiss.style.filter = 'none';
+});
+
+herSweetKissText.addEventListener('mouseover', (event) => {
+
+    herSweetKissText.style.opacity = "1";
+    herSweetKiss.style.filter = "blur(2px)";
 }); 
 
 
