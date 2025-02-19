@@ -38,3 +38,7 @@ contentDOM.addEventListener('click', (event) => {
 
     additionalNavbar.classList.add('hidden');
 });
+
+// update the date
+const date = document.getElementById("date");
+date.innerText = new Date().getFullYear();

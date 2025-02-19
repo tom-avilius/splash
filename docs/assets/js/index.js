@@ -43,14 +43,14 @@ content1.addEventListener('mouseover', (event) => {
     p1.classList.add('p-hover');
     h11.classList.add('h1-hover');
     d1.classList.remove('hidden');
-    
+
     content1.addEventListener('mouseleave', (event) => {
 
         hr1.classList.remove('hr-hover');
         p1.classList.remove('p-hover');
         h11.classList.remove('h1-hover');
         d1.classList.add('hidden');
-        content1.removeEventListener('mouseleave', (event) => {});
+        content1.removeEventListener('mouseleave', (event) => { });
     });
 });
 
@@ -61,14 +61,14 @@ content2.addEventListener('mouseover', (event) => {
     p2.classList.add('p-hover');
     h12.classList.add('h1-hover');
     d2.classList.remove('hidden');
-    
+
     content2.addEventListener('mouseleave', (event) => {
 
         hr2.classList.remove('hr-hover');
         p2.classList.remove('p-hover');
         h12.classList.remove('h1-hover');
         d2.classList.add('hidden');
-        content2.removeEventListener('mouseleave', (event) => {});
+        content2.removeEventListener('mouseleave', (event) => { });
     });
 });
 
@@ -79,14 +79,14 @@ content3.addEventListener('mouseover', (event) => {
     p3.classList.add('p-hover');
     h13.classList.add('h1-hover');
     d3.classList.remove('hidden');
-    
+
     content3.addEventListener('mouseleave', (event) => {
 
         hr3.classList.remove('hr-hover');
         p3.classList.remove('p-hover');
         h13.classList.remove('h1-hover');
         d3.classList.add('hidden');
-        content3.removeEventListener('mouseleave', (event) => {});
+        content3.removeEventListener('mouseleave', (event) => { });
     });
 });
 
@@ -111,3 +111,7 @@ contentDOM.addEventListener('click', (event) => {
 
     additionalNavbar.classList.add('hidden');
 });
+
+// update the date
+const dateElement = document.getElementById("date");
+dateElement.innerText = new Date().getFullYear();

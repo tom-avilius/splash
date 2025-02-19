@@ -47,7 +47,7 @@ wintersKissText.addEventListener('mouseover', (event) => {
 
     wintersKissText.style.opacity = "1";
     wintersKiss.style.filter = "blur(2px)";
-}); 
+});
 
 // hover listener to the pine element
 pine.addEventListener("mouseover", (event) => {
@@ -66,7 +66,7 @@ pineText.addEventListener('mouseover', (event) => {
 
     pineText.style.opacity = "1";
     pine.style.filter = "blur(2px)";
-}); 
+});
 
 // hover listener to the her sweet kiss element
 herSweetKiss.addEventListener("mouseover", (event) => {
@@ -85,7 +85,7 @@ herSweetKissText.addEventListener('mouseover', (event) => {
 
     herSweetKissText.style.opacity = "1";
     herSweetKiss.style.filter = "blur(2px)";
-}); 
+});
 
 
 // adding event listener to the dropdown button to
@@ -109,3 +109,7 @@ contentDOM.addEventListener('click', (event) => {
 
     additionalNavbar.classList.add('hidden');
 });
+
+// update the date
+const date = document.getElementById("date");
+date.innerText = new Date().getFullYear();
